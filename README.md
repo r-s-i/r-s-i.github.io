@@ -1,3 +1,3 @@
 # r-s-i.github.io
 
-r-s-i.github.io is currently only made in connection with a mimo project. Eventually, it will become a place to host my past and future projects.
+r-s-i.github.io is a site where I host some of my web dev projects. Eventually, it will become a place to host my past and future projects.
