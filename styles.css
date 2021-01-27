@@ -1,0 +1,67 @@
+/*GLOBAL*/
+h1 {
+  text-align: center;
+  color: #F5F0F6;
+}
+
+header {
+  background-color: grey;
+  color: lightgrey;
+  font-family: arial, helvetica;
+  font-size: 200%;
+  padding: 10px;
+  box-sizing: border-box
+}
+
+ a {
+  display: inline-block;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: dashed black 0.125rem;
+}
+
+main {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  padding-top: 50px;
+  display: block;
+  margin: auto;
+}
+
+footer {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  background-color: grey;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+header, main, footer {
+  width: 90%;
+  margin: auto;
+}
+
+/*interactivity*/
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightgrey;
+  color: blue;
+  text-decoration: underline;
+}
