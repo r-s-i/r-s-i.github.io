@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/tech-icon.png">
+</head>
+
+<body id="body">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+  <nav id="navbar">
+    <header id="header">
+      <h1>Important Semantic Elements (HTML5)</h1>
+    </header>
+    <ul>
+      <li><a href="#main-doc">What are Sematic Elements?</a></li>
+      <li><a href="#Header" class="nav-link">Header</a></li>
+      <li><a href="#Nav" class="nav-link">Nav</a></li>
+      <li><a href="#Main" class="nav-link">Main</a></li>
+      <li><a href="#Article" class="nav-link">Article</a></li>
+      <li><a href="#Section" class="nav-link">Section</a></li>
+      <li><a href="#Footer" class="nav-link">Footer</a></li>
+    </ul>
+  </nav>
+	
+  <main id="main-doc">
+    <article>
+      <h2>What are Semantic Elements?</h2>
+      <p>
+        Semantic Elements are named in such a fashion that their name describes what they are for.
+      </p>
+      <!--Info about header-->
+      <section class="main-section" id="Header">
+        <header>
+          <h2>Header</h2>
+        </header>
+        <p>
+          <code>&lt;header&gt;</code> is used of introductory content. Can included <code>&lt;h1&gt; to &lt;h6&gt;</code> elements.
+        </p>
+
+        <p>
+          A page usually have a header at the beginning (top).
+        </p>
+      </section>
+        <!--Info about nav-->
+        <section class="main-section" id="Nav">
+          <header>
+            <h2>Nav</h2>
+          </header>
+          <p>
+            <code>&lt;nav&gt;</code> is for navigational links.
+          </p>
+  
+          <p>
+            Normally, this element comes after the header on a page.
+          </p>
+        </section>
+      <!--Info about main-->
+      <section class="main-section" id="Main">
+        <header>
+          <h2>Main</h2>
+        </header>
+        <p>
+          Is the <em>main</em> attraction of the webpage. You put all content that is unique here.
+        </p>
+
+        <p>
+          <h3>Elements that don't belong inside a <code>&lt;main&gt;</code> element:</h3>
+          <ul>
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;nav&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+          </ul>
+        </p>
+      </section>
+      <!--Info about article-->
+      <section class="main-section" id="Article">
+        <header>
+          <h2>Article</h2>
+        </header>
+        <p>
+          As the name implies, you should be able to read the contents of an <code>&lt;article&gt;</code> element without any surrounding context. It should be able to stand alone.
+        </p>
+      </section>
+      <!--Info about section-->
+      <section class="main-section" id="Section">
+        <header>
+          <h2>Section</h2>
+        </header>
+
+        <p>
+          Bundle together content that belongs in the same group.
+        </p>
+
+        <p>
+          For instance, if you wrote an article about the etymology behind the name of the seven days, each time you talked about a new day, you would start a new <code>&lt;section&gt;</code> element. 
+        </p>
+      </section>
+      <!--Info about footer-->
+      <section class="main-section" id="Footer">
+        <header>
+          <h2>Footer</h2>
+        </header>
+
+        <p>
+          The <code>&lt;footer&gt;</code> element is at the bottom of pages. 
+        </p>
+
+        <p>
+          <h3>
+            Things one puts inside a <code>&lt;footer&gt;</code> element:
+          </h3>
+          <ul>
+            <li>Contact info</li>
+            <li>Author info</li>
+            <li>Copyright Info (&copy;)</li>
+          </ul>
+        </p>
+      </section>
+    </article>
+	</main>
+	
+  <footer id="footer">
+    <p>
+      <a href="../../index.html">Back to web development projects list</a>
+    </p>
+  </footer>
+
+</body>
+</html>
