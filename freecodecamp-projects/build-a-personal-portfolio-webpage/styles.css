@@ -49,40 +49,109 @@ table {
 
 /*My CSS:*/
 
-body {
-	max-width: 700px;
+#navbar {
+  position: sticky;
+	top: 0;
+	padding: 2rem;
+}
+
+#welcome-section {
+	height: 100vh;
+}
+
+#welcome-section figure img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+	
+}
+
+#info {
+	max-width: 480px;
 	margin: 0 auto;
 }
 
-/*header*/
+#info p {
+	
+	margin: 1rem;
+	text-align: left;
+}
+
+body {
+	background-color: grey;
+}
 
 header {
-  background-color: lightgrey;
-  
+	text-align: center;
+	font-size: 1.5rem;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
+.flex-cont {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color:dimgrey;
 }
 
-p {
-	padding: 1rem;	
+header, #navbar {
+	min-height: 5rem;
+	background: lightgrey;
 }
 
-/*main*/
-
-li {
-  list-style: square;
-  margin: 1rem;
-  line-height: 1.15;
+#navbar {
+	max-height: 100%;
 }
 
-/*footer*/
+ul {
+ display: flex;
+ flex-wrap: wrap;
+ max-width: 480px;
+ margin: 0 auto;
+}
+
+li a {
+	display: inline-block;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border: 1px dashed black;
+}
+
+figure {
+	margin: 1rem;
+	background-color: grey;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 footer {
+  box-sizing: border-box;
+  padding: 1rem;
   text-align: center;
-  background-color: lightgrey;
+  background-color: grey;
 }
+
+footer p a {
+	display: inline-block;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border: 1px dashed black;
+}
+
+/*Media query*/
+
+@media (max-width: 300px) {
+	h1 {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 225px) {
+	h1 {
+		font-size: 0.75rem;
+	}
+}
+
 
