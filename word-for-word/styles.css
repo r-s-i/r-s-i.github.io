@@ -1,0 +1,88 @@
+/*Tag styles:*/
+input, label, button, textarea {
+  padding: 0.4rem;
+  margin: 0.4rem auto;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+label, input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 60vw;
+  max-width: 1000px;
+}
+
+button {
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+footer a {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: green;
+}
+
+footer a:visited {
+  color: red;
+}
+
+/*Id styles:*/
+#output {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wpm {
+  width: 80px;
+}
+
+#px {
+  width: 50px;
+}
+
+#input_section, h1, footer {
+  text-align: center;
+}
+
+#output_section {
+  box-sizing: border-box;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+  width: 98vw;
+}
+
+#settings, #options {
+  display: none;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: darkgreen;
+}
+
+#options button {
+  margin: 1rem;
+}
+
+#settings input[type="radio"], #settings input[type="checkbox"] {
+  transform: translate(-30%, 5%) scale(1.5);
+}
+
+#settings p {
+  font-size: 1.2rem;
+}
+
+/*classes:*/
+.input_parts {
+  margin: 1.5rem;
+}
