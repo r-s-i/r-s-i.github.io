@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>
+      aster the Multiplication Table
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main id="main">
+      <h1>Master the Multiplication Table (1-12)</h1>
+
+
+          <p>
+            <span id="n1"></span> * <span id="n2"></span> =
+          </p>
+          <input type="number" id="userInput" onkeydown="isReturnDown()">
+          <button onclick="checkAnswer()">Solve</button>
+
+      <p id="message">message</p>
+      <br>
+      <p>Score:</p>
+      <br>
+      <p id="score"></p>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/robin-iversen-186041169/" target="_blank">Made by Robin Iversen</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
