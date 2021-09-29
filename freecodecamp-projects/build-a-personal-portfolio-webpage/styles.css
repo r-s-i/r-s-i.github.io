@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My CSS:*/
+
+#navbar {
+  position: sticky;
+	top: 0;
+	padding: 2rem;
+}
+
+#welcome-section {
+	height: 100vh;
+}
+
+#welcome-section figure img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+	
+}
+
+#info {
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+#info p {
+	
+	margin: 1rem;
+	text-align: left;
+}
+
+body {
+	background-color: grey;
+}
+
+header {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.flex-cont {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color:dimgrey;
+}
+
+header, #navbar {
+	min-height: 5rem;
+	background: lightgrey;
+}
+
+#navbar {
+	max-height: 100%;
+}
+
+ul {
+ display: flex;
+ flex-wrap: wrap;
+ max-width: 480px;
+ margin: 0 auto;
+}
+
+li a {
+	display: inline-block;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border: 1px dashed black;
+}
+
+figure {
+	margin: 1rem;
+	background-color: grey;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+footer {
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  background-color: grey;
+}
+
+footer p a {
+	display: inline-block;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border: 1px dashed black;
+}
+
+/*Media query*/
+
+@media (max-width: 300px) {
+	h1 {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 225px) {
+	h1 {
+		font-size: 0.75rem;
+	}
+}
+
+

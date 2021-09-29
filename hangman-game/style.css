@@ -1,0 +1,66 @@
+/*Generic selectors:*/
+body {
+	background: black;
+	color: rgb(100, 100, 255);
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+footer {
+	margin-top: 3rem;
+}
+
+footer a {
+	display: block;
+	margin: 1.5rem;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	width: 6rem;
+	height: 2rem;
+}
+
+input {
+	width: 6rem;
+	display: block;
+	margin: 0 auto;
+}
+
+/*Ids:*/
+#display {
+	height: 300px;
+	width: 300px;
+	background-image: url("img/1.png");
+	background-color: #9C9C9C;
+	background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+	margin: 0 auto;
+}
+
+#word_to_guess {
+	font-family: monospace;
+	font-size: 2.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#letters_guessed {
+	color: red;
+}
+
+#message {
+	color: black;
+	font-weight: bold;
+}
+
+#reset_button {
+	display: none;
+}

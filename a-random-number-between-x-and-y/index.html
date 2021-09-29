@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript, tool, random, random number generator">
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Random Number Between X and Y
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>A Random Number Between X and Y</h1>
+
+      <p>
+        A random number between <br><input type="number" id="x-num" onkeydown="isReturnDown()"> and <input type="number" id="y-num" onkeydown="isReturnDown()">
+      </p>
+      <button onclick="getRandomNum()">Click</button>
+
+      <p id="result"></p>
+    </main>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/robin-iversen-186041169/" target="_blank">Made by Robin Iversen</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

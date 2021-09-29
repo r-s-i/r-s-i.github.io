@@ -1,0 +1,113 @@
+html {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+body {
+  background-color: #333333;
+  color: #d3d3d3;
+	
+}
+
+h1 {
+	margin: 10px;
+}
+
+/*game/article*/
+#game {
+	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: grey;
+	width: 400px;
+	height: 400px;
+}
+
+/*panes*/
+/*all*/
+.panes {
+	width: 100px;
+	margin: 10px;
+}
+
+/*for small screens*/
+@media screen and (max-width: 600px) {
+	#game {
+		width: 300px;
+		height: 400px;
+	}
+}
+
+/*for tiny screens*/
+@media screen and (max-width: 300px) {
+	#game {
+		width: 200px;
+		height: 400px;
+	}
+}
+
+
+#pane-1:active, #pane-2:active, #pane-3:active, #pane-4:active,
+#pane-5:active, #pane-6:active {
+	background-color: black;
+}
+
+/*individual*/
+#pane-1 {
+	background-color: red;
+}
+#pane-2 {
+	background-color: green;
+}
+#pane-3 {
+	background-color: blue;
+}
+#pane-4 {
+	background-color: orange;
+}
+#pane-5 {
+	background-color: yellow;
+}
+#pane-6 {
+	background-color: darkviolet;
+}
+
+#play, #check {
+	width: 150px;
+	height: 75px;
+	font-size: 2.1rem;
+	font-weight: bold;
+	margin: 10px;
+	margin-top: 20px;
+}
+/*for small screens*/
+@media screen and (max-width: 600px) {
+	#play, #check {
+		width: 70px;
+		height: 35px;
+		font-size: 1rem;
+	}
+}
+
+/*game info*/
+p {
+	font-size: 1.5rem;
+}
+
+/*footer*/
+footer {
+	width: 100vw;
+	margin-top: 80px;
+}
+
+footer a {
+	color: green;
+	display: block;
+	margin: 50px;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
