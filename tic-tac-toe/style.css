@@ -1,0 +1,88 @@
+/*Sematic and tags:*/
+html {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #333333;
+  color: #d3d3d3;	
+}
+
+h1 {
+	font-size: 20px;
+	margin: 10px;
+	display: block;
+}
+
+p {
+	line-height: 1.2;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer a {
+	display: block;
+	margin: 30px;
+	color: #d3d3d3;
+	line-height: 1.2;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+/*Classes:*/
+.panes {
+	display: inline-block;
+	background-color: grey;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 80px;
+	margin: 2px;
+}
+
+/*Ids:*/
+#grid {
+	width: 330px;
+	margin: 0 auto;
+}
+
+#output-tie, #output-gameover {
+	font-size: 18px;
+}
+
+#output-tie {
+	visibility: hidden;
+}
+
+#output-gameover {
+	visibility: hidden;
+}
+
+#button {
+	font-size: 20px;
+	background-color: black;
+	color: #d3d3d3;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	visibility: hidden;
+}
+
+/*For larger screens:*/
+@media only screen and (min-width: 700px) {
+	#grid {
+		width: 500px;
+	}
+	.panes {
+		width: 125px;
+		height: 125px;
+	}
+	
+}
+
+
+
+
+
