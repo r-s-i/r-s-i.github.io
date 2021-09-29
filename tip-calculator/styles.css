@@ -1,0 +1,101 @@
+/*Generic selectors:*/
+
+* {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: dimGrey;
+}
+article {
+  background-color: white;
+  box-shadow: 5px 6px 6px 0px #000000;
+  overflow: scroll;
+  scrollbar-width: none; /*Firefox*/
+}
+article::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2 {
+  font-size:1.25rem;
+  margin: 0.5rem;
+}
+
+input {
+  display: block;
+  border: 1px solid dimGrey;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+footer {
+  background: 260px
+}
+
+footer a{
+  margin-top: 2rem;
+  margin-bottom: 1.63rem;
+  padding: 0.75rem;
+  border: solid 1px black;
+  background-color: white;
+  display: inline-block;
+  box-shadow: 5px 6px 6px 0px #000000;
+}
+
+footer a:active {
+  box-shadow: none;
+}
+
+/*Ids:*/
+#calculator_proper {
+  border: black 1px solid;
+  width: 250px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+#group_question_answered {
+  visibility: hidden;
+}
+
+#group_question > input {
+  display: inline-block;
+  margin-top: -1px;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+#group_question > label {
+  padding: 0.4rem;
+  margin-left: -4px;
+}
+
+#price_and_percentage > input, #num_of_persons {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 20px;
+}
+
+#info_and_output {
+  margin: 1rem;
+}
+
+/*Classes:*/
+.labels {
+  display: block;
+  padding: 0.5rem;
+}
