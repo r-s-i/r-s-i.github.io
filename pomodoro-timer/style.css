@@ -1,0 +1,152 @@
+/*Shared*/
+* {
+	color: hsl(120, 100%, 28%);
+}
+
+html {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+}
+
+body {
+  background-color: hsl(0, 0%, 5%);
+	margin: 0 auto;
+	width: 370px;
+}
+
+#timer, #settings, #info, footer {
+	margin: 2rem;
+}
+
+h1, h2, h3,p {
+	padding: 0.5rem;
+}
+
+/*Over header*/
+/*Beyond Footer*/
+#hidden {
+	display: none
+}
+
+/*Header*/
+header {
+	padding-top: 1rem;
+	background-color: hsl(0, 0%, 5%);
+}
+header h1 {
+	font-size: 2rem;
+}
+
+/*Main*/
+#timer {
+	background-color: hsl(0, 0%, 5%);
+}
+
+button {
+	display: block;
+	background-color: hsl(0, 0%, 0%);
+	margin: 1rem auto;
+	font-weight: 700;
+	font-size: 1.2rem;
+	width: 10rem;
+	height: 3rem;
+}
+
+#reset {
+	display: none;
+	background-color: darkRed;
+	color: #d3d3d3;
+}
+
+#output, #clock {
+	display: none;
+}
+#clock {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: hsl(0, 0%, 70%)
+}
+
+#settings {
+	background-color: hsl(0, 0%, 5%);
+	margin: 0 auto;
+	text-align: left;
+}
+#settings h2 {
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+#chosen_settings {
+	display: none;
+}
+
+#sound {
+	width: 5rem;
+}
+#notification {
+	width: 5rem;
+}
+
+#pause-after-session {
+	width: 5rem;
+}
+
+input {
+	padding: 1rem;
+	font-size: 1rem;
+	width: 3rem;
+	background-color: hsl(0, 0%, 0%);
+}
+
+#solid-setting {
+	display: none;
+}
+
+/*Footer*/
+footer {
+	background-color: hsl(0, 0%, 5%);
+	padding-bottom: 1rem;
+}
+footer a {
+	display: block;
+	padding: 1rem;
+	color: hsl(120, 100%, 27%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ids:*/
+
+
+
+
+
+
+
+
+
+
+
+
+

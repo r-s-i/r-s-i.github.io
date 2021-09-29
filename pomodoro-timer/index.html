@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" type="image" href="icon.png"/>
+    <title>
+      Pomodoro Timer
+    </title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <aside id="hidden">
+      <audio id="audio" loops>
+        <source src="alarm.mp3" type="audio/mpeg">
+        <source src="alarm.ogg" type="audio/ogg">
+      </audio>
+    </aside>
+    <main id="main">
+      <header>
+        <h1>
+          Pomodoro Timer
+        </h1>
+      </header>
+      <article>
+        <section id="timer">
+            <!--Reset button, hidden by when start button shows:-->
+            <button id="reset" onclick="reset()">Reset</button>
+            <!--Start button:-->
+            <button id="start" onclick="start()">Start</button>
+            <!--Pause button:-->
+            <button id="pause" onclick="pause()">Pause</button>
+            <!--Info-->
+            <p>Finished work interval(s): <span id="Finished_work_session">0</span></p>
+            <p id="clock">If you are seeing this the script didn't run.</p>
+            <p id="text"></p> <!--Delete when done.-->
+        </section>
+        <section id="settings">
+          <h2>Settings</h2>
+          <!--Sound checkbox:-->
+          <p>
+            <input type="checkbox" onclick="checkboxClicked(1)" id ="sound_checkbox">
+            <label for="sound_checkbox">Sound</label> 
+          </p>
+          <!--Notification checkbox:-->
+          <p id="notification_setting">
+            <input type="checkbox" onclick="checkboxClicked(2)" id ="notification_checkbox">
+            <label for="notification_checkbox">Desktop notifications</label> 
+          </p>
+          <!--Auto Pause checkbox:-->
+          <p>
+            <input type="checkbox" onclick="checkboxClicked(3)" id ="auto_pause_checkbox">
+            <label for="auto_pause_checkbox">Auto-pausing</label> 
+          </p>
+          <!--Work duration-->
+          <p>
+            <input type="number" min="1" max=999 value="25" id="work_duration_input">
+            <label for="work_duration_input">Work duration</label>
+          </p>
+          <!--Short break duration-->
+          <p>
+            <input type="number" min="1" max=999 value="5" id="sbreak_duration_input">
+            <label for="sbreak_duration_input">Short break duration</label>
+          </p>
+          <!--Long break duration-->
+          <p>
+            <input type="number" min="1" max=999 value="15" id="lbreak_duration_input">
+            <label for="lbreak_duration_input">Long break duration</label>
+          </p>
+          <!--Work intervals before long break-->
+          <p>
+            <input type="number" min="1" max=999 value="4" id="how_long_before_lbreak_input">
+            <label for="how_long_before_lbreak_input">Work interval(s) before long break</label>
+          </p>
+        </section>
+
+        <section id="chosen_settings">
+          <h2>Chosen Settings</h2>
+          <p>Sound: <span id="from_sound_checkbox"></span></p>
+          
+          <p id="chosen_settings_notification">Desktop notifications: <span id="from_notification_checkbox"></span></p>
+          
+          <p>Auto-pausing: <span id="from_auto_pause_checkbox"></span></p>
+
+          <p>Work: <span id="from_work_duration_input"></span> min</p>
+
+          <p>Short break: <span id="from_sbreak_duration_input"></span> min</p>
+
+          <p>Long break: <span id="from_lbreak_duration_input"></span> min</p>
+
+          <p>Work intervals before long break: <span id="from_how_long_before_lbreak_input"></span></p>
+        </section>
+      </article>
+    </main>
+    <footer id="contact">
+      <a href="../index.html">Home</a>
+      <a href="https://www.linkedin.com/in/robin-iversen-186041169/" target="_blank">Made by Robin Iversen</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
