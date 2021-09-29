@@ -1,0 +1,316 @@
+/*color palette:
+bluish: #0080ff
+greenish: #00ff80
+*/
+/*For Mobile Users*/
+/*section. 1: All inclusive changes*/
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+
+/*removes links defaults*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*Section. 2: relating to in-game*/
+/*Shows only the relevant options*/
+.letter {
+  display: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.one .a, .one .i, .one .s, .one .v,
+.two .b, .two .o, .two .x, .two .h,
+.three .c, .three .u, .three .l, .three .z,
+.four .d, .four .b, .four .s, .four .o,
+.five .e, .five .l, .five .k, .five .m,
+.six .f, .six .a, .six .m, .six .u,
+.seven .g, .seven .h, .seven .u, .seven .j,
+.eight .h, .eight .p, .eight .u, .eight .y,
+.nine .i, .nine .z, .nine .f, .nine .g,
+.ten .j, .ten .m, .ten .a, .ten .k,
+.eleven .k, .eleven .h, .eleven .s, .eleven .x,
+.twelve .l, .twelve .o, .twelve .e, .twelve .p,
+.thirteen .m, .thirteen .y, .thirteen .p, .thirteen .g,
+.fourteen .n, .fourteen .j, .fourteen .w, .fourteen .r,
+.fifteen .o, .fifteen .s, .fifteen .u, .fifteen .i,
+.sixteen .p, .sixteen .l, .sixteen .m, .sixteen .q,
+.seventeen .q, .seventeen .a, .seventeen .t, .seventeen .e,
+.eighteen .r, .eighteen .i, .eighteen .l, .eighteen .g,
+.nineteen .s, .nineteen .w, .nineteen .h, .nineteen .n,
+.twenty .t, .twenty .o, .twenty .l, .twenty .i,
+.twenty-one .u, .twenty-one .z, .twenty-one .h, .twenty-one .s,
+.twenty-two .v, .twenty-two .x, .twenty-two .r, .twenty-two .m,
+.twenty-three .w, .twenty-three .l, .twenty-three .d, .twenty-three .p,
+.twenty-four .x, .twenty-four .s, .twenty-four .p, .twenty-four .d,
+.twenty-five .y, .twenty-five .q, .twenty-five .x, .twenty-five .b,
+.twenty-six .z, .twenty-six .h, .twenty-six .t, .twenty-six .d {
+  display: flex;
+}
+
+h1 {
+  background-color: #0080ff;
+  border: solid black 1px;
+  height: 180px;
+  box-sizing: border-box;
+  padding: 55px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.letter {
+  font-size: 700%;
+  height: 180px;
+}
+
+.letter a {
+  background-color: #ff0000;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid black 1px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+a.return-btn {
+  display: flex;
+  background-color: #00ff80;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 60px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 180%;
+  margin-top: 200px;
+}
+
+a.cont-btn {
+  display: flex;
+  margin-top: 530px;
+  background-color: #ff0000;
+  width: 100%;
+  height: 180px;
+  box-sizing: border-box;
+  padding: 60px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 180%;
+}
+
+.that-is-correct {
+  display: flex;
+  background-color: #0080ff;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 60px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 180%;
+}
+
+.pic-wrong {
+  background-image: url("../images/photos/pic-wrong.jpg");
+  height: 542px;
+}
+
+.pic-wrong span {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.pic-in-game {
+  background-image: url("../images/photos/pic-in-game.jpg");
+    height: 542px;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l,
+.m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a:active {
+  color: gold;
+  background-color: gold;
+}
+
+/*game end*/
+
+
+.game-end {
+  background-image: url("../images/photos/fireworks.jpg");
+  height: 542px;
+}
+
+.game-end span {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+/*section. 3: relating to start screen, credits, and instructions*/
+/*start screen*/
+.start-p.top {
+  background-image: url("../images/photos/scrabble-letters-top.jpg");
+  height: 180px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.start-p.middle {
+  background-image: url("../images/photos/scrabble-letters-middle.jpg");
+  height: 180px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.start-p.middle div a {
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-top: 15px;
+  padding: 12px;
+  display: block;
+}
+
+.start-p.bottom {
+  background-image: url("../images/photos/scrabble-letters-bottom.jpg");
+  height: 180px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.start-p.bottom p {
+  padding-top: 75px;
+}
+
+.start-p span {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/*instructions*/
+#instructions article {
+  text-align: left;
+  background-image: url("../images/photos/black-board.jpg");
+  color: lightgrey;
+  height: 542px;
+  font-size: 150%;
+  overflow: scroll;
+}
+
+#instructions a {
+  display: block;
+  background-color: #00ff80;
+  width: 100%;
+  height: 180px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-top: 35px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 180%;
+  text-align: center;
+}
+
+#instructions .start-inst {
+  background-color: #ff0000;
+}
+
+/*credits*/
+#credits a {
+  display: block;
+  background-color: #00ff80;
+  width: 100%;
+  height: 180px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-top: 35px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 180%;
+  text-align: center;
+}
+
+#credits .start-cred {
+  background-color: #ff0000;
+}
+
+#credits article a {
+  display: inline;
+  padding: 0;
+  font-size: inherit;
+  box-shadow: none;
+}
+
+#credits article {
+  background-image: url("../images/photos/mic-kid.jpg");
+  height: 542px;
+  font-size: 100%;
+}
+
+#credits article span {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin-top: 30px;
+  width: 650px;
+}
+
+
+
+/*pseudo classes*/
+a:active {
+  background-color: gold !important;
+  color: gold !important;
+}
+
+/*For desktop users*/
+@media only screen and (min-width: 799px) {
+
+* {
+  width: 760px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} /*ends @media*/
