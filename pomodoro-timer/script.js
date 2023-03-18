@@ -36,11 +36,10 @@ function checkboxClicked(x) {
   }
 }
 /*If true return "On", if false return "Off":*/
-function returnOnOrOf(bool){
+function returnOnOrOf(bool) {
   if (bool) {
     return "On";
-  }
-  else {
+  } else {
     return "Off";
   }
 }
@@ -56,7 +55,9 @@ function start() {
   workDuration = document.getElementById("work_duration_input").value;
   shortBreakDuration = document.getElementById("sbreak_duration_input").value;
   longBreakDuration = document.getElementById("lbreak_duration_input").value;
-  workSessionsBeforeLongBreak = document.getElementById("how_long_before_lbreak_input").value;
+  workSessionsBeforeLongBreak = document.getElementById(
+    "how_long_before_lbreak_input"
+  ).value;
   /*Starts the timer:*/
   timer(workDuration, "Work");
   workCounter++;
@@ -64,19 +65,25 @@ function start() {
   document.getElementById("settings").style.display = "none";
   /*Transfer the editiable settings to chosen settings:*/
   /*Sound:*/
-  document.getElementById("from_sound_checkbox").innerHTML = returnOnOrOf(isSoundOn);
+  document.getElementById("from_sound_checkbox").innerHTML =
+    returnOnOrOf(isSoundOn);
   /*Notification:*/
-  document.getElementById("from_notification_checkbox").innerHTML = returnOnOrOf(isNotificationOn);
+  document.getElementById("from_notification_checkbox").innerHTML =
+    returnOnOrOf(isNotificationOn);
   /*Auto pause:*/
-  document.getElementById("from_auto_pause_checkbox").innerHTML = returnOnOrOf(isAutoPauseOn);
+  document.getElementById("from_auto_pause_checkbox").innerHTML =
+    returnOnOrOf(isAutoPauseOn);
   /*Work duration:*/
   document.getElementById("from_work_duration_input").innerHTML = workDuration;
   /*Short break duration:*/
-  document.getElementById("from_sbreak_duration_input").innerHTML = shortBreakDuration;
+  document.getElementById("from_sbreak_duration_input").innerHTML =
+    shortBreakDuration;
   /*Long break duration:*/
-  document.getElementById("from_lbreak_duration_input").innerHTML = longBreakDuration;
+  document.getElementById("from_lbreak_duration_input").innerHTML =
+    longBreakDuration;
   /*Work interval(s) before long break:*/
-  document.getElementById("from_how_long_before_lbreak_input").innerHTML = workSessionsBeforeLongBreak;
+  document.getElementById("from_how_long_before_lbreak_input").innerHTML =
+    workSessionsBeforeLongBreak;
   /*Shows the chosen settings:*/
   document.getElementById("chosen_settings").style.display = "block";
 } // End of start().
@@ -86,7 +93,7 @@ let globalType; // Used in pause().
 function timer(min, type) {
   globalType = type;
   /*countsDown():*/
-  timePlussNow = new Date().getTime() + 1000*60*min
+  timePlussNow = new Date().getTime() + 1000 * 60 * min;
   function countsDown() {
     let timeRightNow = new Date().getTime();
     let timeDiff = timePlussNow - timeRightNow;
@@ -112,7 +119,7 @@ function timer(min, type) {
     /*Displays the clock to the user:*/
     clock.innerHTML = `${m}:${s}`;
     clock.style.display = "block";
-    text.innerHTML = `${type}`
+    text.innerHTML = `${type}`;
     if (m <= 0 && s <= 0) {
       clearInterval(x);
       if (isSoundOn) {
@@ -142,7 +149,7 @@ function timer(min, type) {
         workCounter++;
         timer(workDuration, "Work");
         if (isAutoPauseOn) {
-           pause();
+          pause();
         }
       }
     }
@@ -151,7 +158,8 @@ function timer(min, type) {
       timeAfterPause = timeDiff / 60000;
       clearInterval(x);
     }
-  } let x = setInterval(countsDown, 100);
+  }
+  let x = setInterval(countsDown, 100);
   countsDown();
 } // End of timer().
 
@@ -177,6 +185,7 @@ function pause() {
 
 /*Hides notification option if not supported:*/
 if (!window.Notification) {
-  document.getElementById("notification_setting").style.display = "none"
-  document.getElementById("chosen_settings_notification").style.display = "none"
+  document.getElementById("notification_setting").style.display = "none";
+  document.getElementById("chosen_settings_notification").style.display =
+    "none";
 }

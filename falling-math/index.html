@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon-apple.png"/>
+  <link rel="shortcut icon" sizes="196x196" href="./favicon-large.png"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falling Math</title>
+  <meta name="description" content="Math game with an increasing level of difficulty settings. How high a level can you reach?">
+  <meta name="keywords" content="game, math, free, brain training">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./vue.global.js"></script>
+  <script src="./app.js" defer></script>
+</head>
+<body >
+  
+  <main id="grid-container">
+    <header v-if="!isDone">
+      <h1>Falling Math</h1>
+      <p>Level: {{level}} </p>
+      <p>Points: {{points}}</p>
+      <p v-if="lives!==1">Lives: {{lives}}</p>
+      <p v-else>Life: {{lives}}</p>
+    </header>
+    <header v-else>
+      <h1>Falling Math</h1>
+      <p>Points: {{points}}</p>
+    </header>
+    <section id="game-area">
+      <section class="row">
+        <section>
+          {{panesArray[0]}}
+        </section>
+      </section>
+      <section class="row">
+        <section :class="[{ lightRed: panesArray[1] !== '' && !isDone }]" @click="reloads = true">
+          {{panesArray[1]}}
+        </section>
+      </section>
+      <section class="row">
+        <section :class="[{ red: panesArray[2] !== '' && !isDone}]">
+          {{panesArray[2]}}
+        </section>
+      </section>
+
+      <section class="row">
+        <section  @click="checkAnswer(answersArray[0])" :class="{ green: isActive }">
+          {{!isDone ? answersArray[0] : ""}}
+        </section>
+        <section @click="checkAnswer(answersArray[1])" :class="{ green: isActive }">
+          {{!isDone ? answersArray[1] : ""}}
+        </section>
+        <section @click="checkAnswer(answersArray[2])" :class="{ green: isActive }">
+          {{!isDone ? answersArray[2] : ""}}
+        </section>
+        <section @click="checkAnswer(answersArray[3])" :class="{ green: isActive }">
+          {{!isDone ? answersArray[3] : ""}}
+        </section>
+      </section>
+    </section>
+    <a href="../index.html" id="footer">
+      <footer>
+        Home
+      </footer>
+    </a>
+  </main>
+</body>
+</html>

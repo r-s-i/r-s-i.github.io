@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+  color: whitesmoke
+}
+:link {
+  color: yellow;
+}
+:visited {
+  color: seagreen;
+}
+header {
+  grid-area: header;
+  display: grid;
+  width: 90vw;
+  max-width: 500px;
+  text-align: center;
+  min-height: 10vh;
+}
+h1 {
+  margin: 0; 
+}
+p {
+  text-align: right;
+  margin-right: 3px;
+}
+
+#footer {
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  font-size: 24px;
+}
+
+#game-area {
+  grid-area: gameArea;
+  display: grid;
+  min-height: 60vh;
+  border-top: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+}
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.row > section {
+  width: 100%;
+  min-height: 15vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+  padding: 4px;
+}
+
+#grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 
+                      "header header header header"
+                      "gameArea gameArea gameArea gameArea"
+                      "gameArea gameArea gameArea gameArea"
+                      "gameArea gameArea gameArea gameArea"
+                      "gameArea gameArea gameArea gameArea"
+                      "footer footer footer footer";
+  grid-gap: 1vh;
+  min-height: 90vh;
+}
+
+/*Vue styles*/
+.lightRed {
+  background-color: rgba(255, 0, 0, 0.20);
+}
+.red {
+  background-color: rgba(255, 0, 0, 0.40);
+}
+
+.green {
+  animation: fadeOut 1s 1;
+ 
+}
+
+@keyframes fadeOut {
+  0% { background-color: rgba(255, 0, 0, 0.4);}
+  100% {background-color: rgba(0, 0, 0, 0);} 
+} 

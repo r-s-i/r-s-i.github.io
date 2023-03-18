@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="D3.js, chart, choropleth map, us, visualization, data, interactive"
+    />
+    <meta
+      name="description"
+      content="Explore a choropleth map of the United States, visualizing the % of adults with a bachelor's degree or higher (2010-2014). This map was created for the freeCodeCamp project, Visualize Data with a Choropleth Map."
+    />
+    <meta name="author" content="Robin Iversen" />
+    <title>Degrees Granted in the United States</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="https://d3js.org/topojson.v3.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Degrees Granted in the United States</h1>
+      <h2 id="description">
+        Percentage of Adults in the US Who Have a Bachelor's (or Higher) Degree
+        (2010-2014)
+      </h2>
+    </header>
+    <main>
+      <aside id="info-a">
+        This is my answer to freeCodeCamp's
+        <a
+          href="https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-choropleth-map"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Visualize Data with a Choropleth Map</a
+        >. The data was source from the
+        <a
+          href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx"
+          target="_blank"
+          rel="noopener noreferrer"
+          >USDA Economic Research Service</a
+        >
+        in 2015.
+      </aside>
+    </main>
+    <footer>
+      <button><a href="../index.html" id="home">Home</a></button>
+      <button id="info-b">Info</button>
+      <button id="tests">Tests</button>
+    </footer>
+  </body>
+</html>

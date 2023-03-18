@@ -58,7 +58,7 @@ function run(arr) {
       shownWords.push(currentWord);
       $("#output").innerHTML = currentWord;
       if (currentWord == undefined) {
-        shownWords.pop() // Removes "undefined".
+        shownWords.pop(); // Removes "undefined".
         doneReading = true; // Used in pause().
         window.clearInterval(interFunc);
         $("#output").innerHTML = "";
@@ -100,17 +100,23 @@ function run(arr) {
 
     /*Makes userInput into an array:*/
     userInputArr = userInput.split(" ");
+    
     /*Removes footnotes (eks: [1]):*/
     if (!isFootnotesOn) {
-      function footnoteRemover(value) {
-        return !(value.includes("[") && value.includes("]"));
-      }
-      userInputArr = userInputArr.filter(footnoteRemover);
+      const footnoteRemover = (arr)=> {
+       for (let i = 0; i < arr.length; i++) {
+        while (arr[i].includes("[") && arr[i].includes("]")) {
+          arr[i] = arr[i].slice(0, arr[i].indexOf("[")) + arr[i].slice(arr[i].indexOf("]")+1, arr.length-1);
+        }
+       }
+      };
+      footnoteRemover(userInputArr);
+      
     }
     /*Removes " ":*/
-    function spaceRemover(value) {
-      return value.length >= 1
-    }
+    const spaceRemover = (value) => {
+      return value.length >= 1;
+    };
     userInputArr = userInputArr.filter(spaceRemover);
 
     // Hides headline, input section, and footer:

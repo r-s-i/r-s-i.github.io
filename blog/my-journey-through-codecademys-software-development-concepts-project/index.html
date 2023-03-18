@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Follow along on the journey to create a pattern-searching algorithm project. From outlining the algorithm, creating a flowchart, and translating it into pseudocode, to testing a Node version and finally developing a fully functional React app. Get insights into the process and learn about the benefits and drawbacks of using pseudocode."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../favicon-apple.png" />
+    <link rel="shortcut icon" sizes="196x196" href="../../favicon-large.png" />
+    <title>
+      My Journey Through Codecademy's Software Development Concepts Project
+    </title>
+    <link rel="stylesheet" href="../styles-blog-posts.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>
+          My Journey Through Codecademy's Software Development Concepts Project
+        </h1>
+
+        <p>
+          As part of the course
+          <a
+            href="https://www.codecademy.com/learn/introduction-to-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Introduction to IT</a
+          >
+          on Codecademy, one has to do a portfolio/kanban project. The mission
+          was to design a pattern-searching algorithm. Since the course didn't
+          assume familiarity with any programming language, the final step was
+          writing pseudocode. But, since I could, I made a fully functional
+          React app.
+        </p>
+
+        <h2>The Outline</h2>
+        <p>
+          The first step was outlining the algorithm. Here is the list I made:
+        </p>
+        <ol>
+          <li>Initialize text variable (from user input)</li>
+          <li>Initialize pattern variable (from user input)</li>
+          <li>Initialize patternCount variable to 0</li>
+          <li>Initialize currentPlace variable to 0</li>
+          <li>
+            Loop through the text looking for the pattern, do not use RegEx
+          </li>
+          <li>If the pattern is found notify the user of the quantity</li>
+          <li>If the pattern is not found output: "No match"</li>
+        </ol>
+
+        <h2>The Flowchart</h2>
+        <p>
+          The next step was to make a flowchart, the original was made with
+          pencil and paper, but I also made a version digitally:
+        </p>
+
+        <img
+          src="./flowchart.webp"
+          width="2246"
+          height="1588"
+          alt="Flowchart going through the logic of the algorithm"
+        />
+
+        <h2>The Pseudocode</h2>
+        <p>
+          The final step of the portfolio project was to create pseudocode from
+          the flowchart. The following is my attempt to translate it:
+        </p>
+
+        <img
+          src="pseudocode.webp"
+          width="713"
+          height="579"
+          alt="pseudocode going through the logic of the algorithm"
+        />
+
+        <h2>The Code</h2>
+        <p>
+          To test the algorithm, before I spent time on the user interface, I
+          made a Node version. Although there would be some adjustments to make
+          with the script, going from Node to React would not present much more
+          additional work. With the pseudocode to guide me, I made this:
+        </p>
+        <img
+          src="node-version.webp"
+          width="835"
+          height="773"
+          alt="Node version of the code"
+        />
+        <p>
+          After manually testing that it worked, I called on create-react-app to
+          make a React template for me.
+        </p>
+        <p>
+          The first task was to create a logo/favicon. I made it quickly using
+          Gimp, and I converted the finished product using InkScape into an SVG
+          file for the logo.
+        </p>
+        <p>
+          Secondly, I changed the template-given CSS in order to make the
+          visuals more to my liking. As a user, my eyes loathe staring at a
+          mostly white screen. So, when I'm in charge, I prefer to make a dark
+          theme. And that's what I did this time too.
+        </p>
+        <p>
+          Afterward, I moved on to retrofit the script to work in the React
+          ecosystem. Maybe not so surprisingly, I needed to use both useState
+          and handleChange to make it work inside the App. Since it was such a
+          tiny app, I didn't see the need to split the App function into a
+          presentational and a container component. If you want to see the code
+          in question it is on my
+          <a
+            href="https://github.com/r-s-i/pattern-searching-algorithm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub page</a
+          >.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+          I spent more time than I needed, but that was my choice. I wanted to
+          get more familiar with React, and I did (to a small degree). The
+          flowchart was quick to draft, and with an eraser, some tape, and
+          scissors it was manageable to make edits. However, after making the
+          flowchart, the pseudocode was a time-waster, in my case. Granted,
+          using this method, I found that I had to make another loop and another
+          variable (PATTERN_MATCHES). But that is something I would have
+          realized writing the actual code. Why write pseudocode when I could as
+          easily (and more proficiently) write the actual code? I can see
+          pseudocode being useful if you have to make different versions of the
+          program, or if you need to communicate across different programming
+          languages.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <a href="../../blog-posts.html">Back</a>
+
+      <a href="../../index.html">Home</a>
+      <a
+        href="https://www.linkedin.com/in/robin-iversen"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="me"
+      >
+        Made by Robin Iversen
+      </a>
+    </footer>
+  </body>
+</html>

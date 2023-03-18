@@ -1,0 +1,126 @@
+/*General:*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+ background: darkgray;
+ font-size: 16px;
+}
+article {
+  height: 90%;
+}
+body {
+  display: block;
+  height: 100vh;
+  height: 100dvh;
+  width: 95%;
+  margin: auto;
+}
+
+/*Header:*/
+header {
+  text-align: center;
+  height: 15%;
+  padding: 0 2rem;  
+}
+h1 {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+#arrow {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+h2 {
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgb(245, 245, 245);
+  transition: opacity 0.25s ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+h2.visible {
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-height: 585px), (max-width: 585px) {
+  h1, h2, #arrow {
+    font-size: 0.9rem;
+  }
+}
+
+/*Section*/
+section {
+  height: 85%;
+}
+svg {
+  background-color: grey;
+}
+@media (max-width: 618px) {
+  #y-axis text {
+    transform: rotate(60deg) translateX(-0.25rem);
+  }
+  #x-axis g:nth-of-type(even) text {
+    transform: translateY(0.75rem);
+  }
+}
+#tooltip {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  background: black;
+  color: white;
+  font-size: 0.8rem;
+}
+@media (max-height: 600px) {
+  #legend text{
+    transform: translate(0.25rem, -1.0rem);
+    font-size: 0.4rem;
+  }
+}
+#info-a {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 50%;
+  overflow: auto;
+  padding: 1rem;
+  background: whitesmoke;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+#info-a.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*Footer:*/
+footer {
+  height: 10%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+button {
+  font-size: 0.75rem;
+  min-width: 6rem;
+}
+button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
