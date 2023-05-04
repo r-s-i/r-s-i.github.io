@@ -2,4 +2,4 @@
 
 ## Description
 
-r-s-i.github.io is a copy of https://robiniversen.com - last synced: 18. March, 2023
+This is where I host [my portfolio site] (https://robiniversen.com).
