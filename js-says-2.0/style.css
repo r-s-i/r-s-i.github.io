@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 2px;
+}
+
+td {
+  height: 75px;
+  width: 75px;
+  background-color: grey;
+}
+
+td:active {
+  background-color: darkcyan;
+}
+
+/*Footer:*/
+a {
+  display: block;
+  padding: 1rem;
+}
+
+footer a #me {
+  text-align: center;
+  display: block;
+}
+
+#restart {
+  visibility: hidden;
+}
+
+/*Non-touch devices:*/
+@media (hover: hover) and (pointer: fine) {
+  td:hover {
+    background-color: green;
+  }
+
+  td:active {
+    background-color: darkcyan;
+  }
+}
+
+/*JavaScript:*/
+.tdDarkBlueBg {
+  background-color: darkblue;
+}
+
+.disable {
+  pointer-events: none;
+}
