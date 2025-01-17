@@ -1,0 +1,57 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  display: block;
+  padding: 1rem;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 2px;
+}
+
+td {
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+}
+td:hover {
+  background-color: lightgrey;
+}
+td:active {
+  background-color: green;
+}
+
+/*For JavaScript:*/
+.computerActivated {
+  background: darkblue;
+}
+.playerActivated {
+  background: green;
+}
+.disable {
+  pointer-events: none;
+}
+.invisible {
+  visibility: hidden;
+}
