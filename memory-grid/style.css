@@ -37,8 +37,6 @@ td {
   background-color: grey;
 }
 
-
-
 /*Non-touch devices:*/
 @media (hover: hover) and (pointer: fine) {
   td:hover {

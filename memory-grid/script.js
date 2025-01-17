@@ -63,7 +63,7 @@ function playerAction(e) {
       newRound();
     } else {
       isGameOver = true;
-      displayer(0);
+      displayer(score);
     }
   }
 }
