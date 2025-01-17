@@ -33,8 +33,12 @@ function displayer(s) {
       };
     } else {
       currentStatus.innerHTML = "You lost"
+      for (let i = 1; i <= paneAmount; i++) {
+        document.getElementById(`${i}`).classList.add("lost")
+      };
     }
     document.getElementById("restart").classList.remove("invisible");
+    gameBoard.classList.add("disable");
     return;
   }
 

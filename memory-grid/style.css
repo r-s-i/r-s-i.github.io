@@ -55,6 +55,9 @@ td {
 .playerActivated {
   background: green;
 }
+.lost {
+  background: darkred;
+}
 .disable {
   pointer-events: none;
 }
