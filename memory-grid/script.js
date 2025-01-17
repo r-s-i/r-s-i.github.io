@@ -28,6 +28,9 @@ function displayer(s) {
   if (isGameOver) {
     if (won) {
       currentStatus.innerHTML = "You won"
+      for (let i = 1; i <= paneAmount; i++) {
+        document.getElementById(`${i}`).classList.add("playerActivated")
+      };
     } else {
       currentStatus.innerHTML = "You lost"
     }
