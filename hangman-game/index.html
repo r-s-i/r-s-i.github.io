@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" type="image" href="icon.png" />
-    <title>Hangman Game</title>
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <main id="main">
-      <header>
-        <h1>Hangman Game</h1>
-      </header>
-      <article>
-        <section id="display">
-          <p id="message"></p>
-        </section>
-        <section id="output">
-          <p id="word_to_guess">
-            <span id="letter_0"></span>
-            <span id="letter_1"></span>
-            <span id="letter_2"></span>
-            <span id="letter_3"></span>
-            <span id="letter_4"></span>
-            <span id="letter_5"></span>
-            <span id="letter_6"></span>
-            <span id="letter_7"></span>
-            <span id="letter_8"></span>
-            <span id="letter_9"></span>
-            <span id="letter_10"></span>
-            <span id="letter_11"></span>
-            <span id="letter_12"></span>
-          </p>
-          <p>Letters not in the word: <span id="letters_guessed"></span></p>
-        </section>
-        <section id="input">
-          <label for="user_guessed_letter"></label
-          ><input
-            id="user_guessed_letter"
-            placeholder="Guess letter..."
-            onkeydown="isReturnDown()"
-          />
-          <button onclick="guess()" id="guess_button">Guess</button>
-          <button onclick="reset()" id="reset_button">Reset</button>
-        </section>
-      </article>
-    </main>
-    <footer id="contact">
-      <a href="../index.html">Home</a>
-      <a
-        href="https://github.com/r-s-i"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Made by Robin Iversen</a
-      >
-    </footer>
-    <script src="words.js"></script>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image" href="icon.png" />
+  <title>Hangman Game</title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <main id="main">
+    <header>
+      <h1>Hangman Game</h1>
+    </header>
+    <article>
+      <section id="display">
+        <p id="message"></p>
+      </section>
+      <section id="output">
+        <p id="word_to_guess">
+          <span id="letter_0"></span>
+          <span id="letter_1"></span>
+          <span id="letter_2"></span>
+          <span id="letter_3"></span>
+          <span id="letter_4"></span>
+          <span id="letter_5"></span>
+          <span id="letter_6"></span>
+          <span id="letter_7"></span>
+          <span id="letter_8"></span>
+          <span id="letter_9"></span>
+          <span id="letter_10"></span>
+          <span id="letter_11"></span>
+          <span id="letter_12"></span>
+        </p>
+        <p>Letters not in the word: <span id="letters_guessed"></span></p>
+      </section>
+      <section id="input">
+        <label for="user_guessed_letter"></label><input id="user_guessed_letter" placeholder="Guess letter..."
+          onkeydown="isReturnDown()" />
+        <button onclick="guess()" id="guess_button">Guess</button>
+        <button onclick="reset()" id="reset_button">Reset</button>
+      </section>
+    </article>
+  </main>
+  <footer id="contact">
+    <a href="../index.html">Home</a>
+    <a href="https://ko-fi.com/robiniversen" target="_blank" rel="noopener noreferrer">Made by Robin Iversen (Ko-fi
+      link)</a>
+  </footer>
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

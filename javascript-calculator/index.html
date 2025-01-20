@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" type="image/png" href="calc-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>javaScript Calculator</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <main id="main">
-      <div id="calc-body">
-        <h1>javaScript Calculator</h1>
-        <!--display-->
-        <input type="text" id="display" onkeydown="isReturnDown()" />
-        <br />
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/png" href="calc-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>javaScript Calculator</title>
 
-        <!--buttons-->
-        <!--Numbers-->
-        <section id="row-1">
-          <button onclick="add1()">1</button>
-          <button onclick="add2()">2</button>
-          <button onclick="add3()">3</button>
-          <button onclick="addStar()">*</button>
-        </section>
-        <section id="row-2">
-          <button onclick="add4()">4</button>
-          <button onclick="add5()">5</button>
-          <button onclick="add6()">6</button>
-          <button onclick="addSlash()">/</button>
-        </section>
-        <section id="row-3">
-          <button onclick="add7()">7</button>
-          <button onclick="add8()">8</button>
-          <button onclick="add9()">9</button>
-          <button onclick="addMinus()">-</button>
-        </section>
-        <section id="row-4">
-          <button onclick="add0()">0</button>
-          <!--dot-->
-          <button onclick="addDot()">.</button>
-          <button onclick="clearDisplay()">C</button>
-          <button onclick="addPlus()">+</button>
-        </section>
-        <section id="row-5">
-          <!--equals sign-->
-          <button onclick="getAnswer()" id="equal-sign">=</button>
-        </section>
-        <section>
-          <!--output-->
-          <input id="output" placeholder="output" />
-        </section>
-      </div>
-    </main>
-    <footer>
-      <a
-        href="https://github.com/r-s-i"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Made by Robin Iversen
-      </a>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <main id="main">
+    <div id="calc-body">
+      <h1>javaScript Calculator</h1>
+      <!--display-->
+      <input type="text" id="display" onkeydown="isReturnDown()" />
       <br />
-      <a href="../index.html">Home</a>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <!--buttons-->
+      <!--Numbers-->
+      <section id="row-1">
+        <button onclick="add1()">1</button>
+        <button onclick="add2()">2</button>
+        <button onclick="add3()">3</button>
+        <button onclick="addStar()">*</button>
+      </section>
+      <section id="row-2">
+        <button onclick="add4()">4</button>
+        <button onclick="add5()">5</button>
+        <button onclick="add6()">6</button>
+        <button onclick="addSlash()">/</button>
+      </section>
+      <section id="row-3">
+        <button onclick="add7()">7</button>
+        <button onclick="add8()">8</button>
+        <button onclick="add9()">9</button>
+        <button onclick="addMinus()">-</button>
+      </section>
+      <section id="row-4">
+        <button onclick="add0()">0</button>
+        <!--dot-->
+        <button onclick="addDot()">.</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="addPlus()">+</button>
+      </section>
+      <section id="row-5">
+        <!--equals sign-->
+        <button onclick="getAnswer()" id="equal-sign">=</button>
+      </section>
+      <section>
+        <!--output-->
+        <input id="output" placeholder="output" />
+      </section>
+    </div>
+  </main>
+  <footer>
+    <a href="https://ko-fi.com/robiniversen" target="_blank" rel="noopener noreferrer">
+      Made by Robin Iversen (Ko-fi link)
+    </a>
+    <br />
+    <a href="../index.html">Home</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
