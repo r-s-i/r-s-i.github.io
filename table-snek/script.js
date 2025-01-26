@@ -271,7 +271,7 @@ function checksForGameOver() {
     gameOver();
   }
   // If game is won:
-  if (table.tableSize < snek.body.length + 1 || true) {
+  if (table.tableSize < snek.body.length + 1) {
     gameOver(true);
   }
 }
