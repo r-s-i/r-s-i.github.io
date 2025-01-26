@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../favicon-apple.png" />
+  <link rel="shortcut icon" sizes="196x196" href="../favicon-large.png" />
+  <title>JavaScript Says Too - 2 by 2 Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Says Too</h1>
+  </header>
+  <main>
+    <p>Score: <span id="score">0</span></p>
+    <p>Staus: <span id="message">Computer's turn</span></p>
+    <table id="game_board">
+      <tr>
+        <td id="1" onclick="playerSequenceAdder(this)"></td>
+        <td id="2" onclick="playerSequenceAdder(this)"></td>
+      </tr>
+      <tr>
+        <td id="3" onclick="playerSequenceAdder(this)"></td>
+        <td id="4" onclick="playerSequenceAdder(this)"></td>
+      </tr>
+    </table>
+  </main>
+  <footer>
+    <a href="./">
+      Back
+    </a>
+    <a href="./2x2.html" id="restart">
+      Play again
+    </a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
