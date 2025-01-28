@@ -77,7 +77,6 @@ li a:hover {
   justify-content: center;
 }
 .flex-list li {
-  background: rgba(128, 128, 128, 0.15);
   text-align: center;
   margin: 0.25rem;
   width: var(--width-unit);
@@ -133,6 +132,16 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+  }
+  a {
+    color: dodgerblue;
+    background: #121212
+  }
+  a:visited {
+    color: Orchid;
+  }
   .flex-list li a:hover {
     outline: white 0.1rem solid;
   }
