@@ -1,0 +1,75 @@
+    :root {
+      color-scheme: dark;      
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      text-align:center;
+      margin: 0;
+      font-size: 1rem;
+    }
+    #canvas {
+      background: black;
+      width: 90vw;
+      height: 67.5vw;
+      max-width: 800px;
+      max-height: 600px;
+      border: 1px solid white;
+      margin: 0 auto;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      text-align: center;
+    }
+    #canvas * {
+      margin: 0;
+      font-size: 1.25rem;
+      text-align:center;  
+      width: 95%;
+      line-height: 1.4;
+      background: black
+    }
+
+    footer {
+      width: 90vw;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    li {
+      list-style-type: none;
+    }
+    li:last-of-type {
+      border-top: solid 1px white;
+      border-bottom: solid 1px white;
+    }
+    a {
+      height: 3rem;
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+    }
+
+    /*Animations*/
+    .correct {
+      animation: greenFadeToBlack 1s forwards;
+    }
+    .wrong {
+      animation: redFadeToBlack 1s forwards;
+    }
+    @keyframes greenFadeToBlack {
+      from {
+          background-color: rgba(0, 100, 0, 0.5);
+      }
+      to {
+          background-color: black;
+      }
+    }
+    @keyframes redFadeToBlack {
+      from {
+          background-color: rgba(100, 0, 0, 0.5);
+      }
+      to {
+          background-color: black;
+      }
+    }
