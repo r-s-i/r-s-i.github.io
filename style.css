@@ -37,3 +37,9 @@ a:visited {
   width: 1rem;
   background-image: url("./ext-site-symbol-grey-lines.png");
 }
+
+/*Resets*/
+.inline {
+  display: inline;
+  padding: 0;
+}
