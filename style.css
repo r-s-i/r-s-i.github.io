@@ -1,18 +1,30 @@
 :root {
   color-scheme: dark;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: lightgray;
 }
-
 
 body {
   margin: 0 auto;
   overflow-y: scroll;
-  width: 80%;
-  
+  max-width: 800px;
+  padding: 20px;
 }
 
+article, section {
+  padding: 10px;
+}
+
+h1 {
+   text-align: center;
+}
 h1, h2{
-  font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
+  font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul {
+    list-style-type: none;    
+    padding: 0;
 }
 
 a {
