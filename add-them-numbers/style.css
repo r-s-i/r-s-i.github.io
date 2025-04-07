@@ -35,7 +35,7 @@ body {
     "score score score";
   text-align: center;
   width: 90%;
-  grid-template-rows: repeat(7, 9vh);
+  grid-template-rows: repeat(7, 86px);
   margin: 0 auto;
   border: 1px solid white;
 }
