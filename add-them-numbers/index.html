@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="icon" sizes="196x196" href="../favicon-large.png" />
+  <meta name="description"
+    content="Dynamic addition game with unique sequences that grow with each correct answer. Customize sequence length, digit size, and reaction time." />
+  <title>Add Them Numbers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main id="canvas">
+    <header>
+      <h1>ADD THEM NUMBERS</h1>
+    </header>
+    <div id="game">
+      <p id="output" aria-hidden="true"></p>
+      <label for="input" class="sr_only">Your answer</label>
+      <input id="input" autocomplete="off">
+      <div id="sr_output" class="sr_only" aria-live="assertive"></div>
+      <button>Play again?</button>
+    </div>
+    <dialog id="settings">
+      <span id="close">&times;</span>
+      <h2>Settings</h2>
+      <label for="reaction_time">Reaction time</label>
+      <input type="number" value="500" id="reaction_time" min="1">
+      <label for="sequence_length">Beginning Sequence Length</label>
+      <input type="number" value="2" id="sequence_length" min="1">
+      <label for="digit_length">Beginning Digit Length</label>
+      <input type="number" value="1" id="digit_length" min="1">
+      <label for="max_sequence_length">Max Sequence Length</label>
+      <input type="number" value="9" id="max_sequence_length" min="1">
+      <label for="max_digit_length">Max Digit Length</label>
+      <input type="number" value="4" id="max_digit_length" min="1">
+      <button id="apply">Apply & Restart</button>
+    </dialog>
+    <div id="score" aria-hidden="true"></div>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="./">Reload</a></li>
+      <li><a href="#" id="settings_opener">Settings</a></li>
+      <li><a href="../development-projects.html" rel="noopener noreferrer" id="exit">Exit</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+/*General*/
+*:not(dialog) {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Main content*/
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: lightgray;
+}
+
+#canvas {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "game game game"
+    "game game game"
+    "game game game"
+    "game game game"
+    "game game game"
+    "score score score";
+  text-align: center;
+  width: 90%;
+  grid-template-rows: repeat(7, 9vh);
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+header {
+  grid-area: header;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+#game {
+  grid-area: game;
+  flex-direction: column;
+
+}
+
+#score {
+  grid-area: score;
+}
+
+#score,
+#game,
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#output {
+  white-space: pre-line;
+  font-size: 1.25rem;
+  max-width: 80vw;
+}
+
+input {
+  text-align: center;
+  height: 50px;
+  font-size: 2rem;
+  width: 90%;
+  display: block;
+}
+
+input,
+button,
+p {
+  display: none;
+}
+
+/*Footer*/
+footer {
+  margin: 0 auto;
+  width: 90%;
+}
+
+a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+a:visited {
+  color: Orchid;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*For JavaScript*/
+.visible {
+  display: block;
+}
+
+/*For settings*/
+dialog input,
+dialog button,
+dialog label {
+  display: block;
+  text-align: left;
+}
+
+dialog button {
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*For accessibility*/
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
