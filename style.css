@@ -2,6 +2,7 @@
   color-scheme: dark;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: lightgray;
+  background: black;
 }
 
 body {
@@ -11,34 +12,37 @@ body {
   padding: 20px;
 }
 
-article, section {
+article,
+section {
   padding: 10px;
 }
 
 h1 {
-   text-align: center;
+  text-align: center;
 }
-h1, h2{
-  font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+h1,
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 ul {
-    list-style-type: none;    
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 a {
-    color: dodgerblue;
-    background: #121212;
-    display: block;
-    padding: 0.5rem;
+  color: dodgerblue;
+  display: block;
+  padding: 0.5rem;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 a:visited {
-    color: Orchid;
+  color: Orchid;
 }
 
 .ext-site {
