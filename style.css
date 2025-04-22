@@ -45,6 +45,10 @@ a:visited {
   color: Orchid;
 }
 
+footer {
+  text-align: center;
+}
+
 /*Resets*/
 .inline {
   display: inline;
