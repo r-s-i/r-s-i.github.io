@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="keywords" content="HTML, CSS, JavaScript, tool, random, random number generator" />
+  <meta name="description"
+    content="Generate a random number between two values of your chosing with this simple, interactive tool." />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A Random Number Between X and Y</title>
@@ -13,14 +15,13 @@
 <body>
   <main>
     <h1>A Random Number Between X and Y</h1>
+    A random number between <br /><label for="x-num" class="sr_only">Your Beginning Number</label><input type="text"
+      id="x-num" onkeydown="isReturnDown()" />
+    and <label for="y-num" class="sr_only">>Your End Number</label><input type="text" id="y-num"
+      onkeydown="isReturnDown()" />
+    <button onclick="getRandomNum()" aria-live="polite">Click</button>
 
-    <p>
-      A random number between <br /><input type="number" id="x-num" onkeydown="isReturnDown()" />
-      and <input type="number" id="y-num" onkeydown="isReturnDown()" />
-    </p>
-    <button onclick="getRandomNum()">Click</button>
-
-    <p id="result"></p>
+    <p id="result" aria-live="polite"></p>
   </main>
 
   <footer>

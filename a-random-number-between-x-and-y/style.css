@@ -23,3 +23,14 @@ footer a {
 #result {
 	height: 20px;
 }
+
+.sr_only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	border: 0;
+	white-space: nowrap;
+	clip: rect(0, 0, 0, 0);
+}
