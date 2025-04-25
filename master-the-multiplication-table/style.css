@@ -11,6 +11,11 @@
   visibility: hidden;
 }
 
+footer a {
+  display: block;
+  margin: 1rem;
+}
+
 .sr_only {
   position: absolute;
   width: 1px;
