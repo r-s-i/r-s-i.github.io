@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="keywords" content="" />
+  <meta name="keywords" content="multiplication, arithmetic, quiz, game" />
+  <meta name="description"
+    content="Master the full multiplication table—from 1x1 to 12x12—in an interactive arithmetic quiz that sharpens your math skills." />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,8 +18,9 @@
   <main id="main">
     <h1>Master the Multiplication Table (1-12)</h1>
 
-    <p><span id="n1"></span> * <span id="n2"></span> =</p>
-    <input type="number" id="userInput" onkeydown="isReturnDown()" />
+    <p><span id="n1"></span> &times; <span id="n2"></span> =</p>
+    <label for="userInput" class="sr_only">Your Answer</label>
+    <input type="text" id="userInput" onkeydown="isReturnDown()" />
     <button onclick="checkAnswer()">Solve</button>
     <p id="message">message</p>
     <p>Score:</p>
