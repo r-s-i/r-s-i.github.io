@@ -1,54 +1,38 @@
-var score = 0;
-var product;
-function setUp() {
-  var n1 = Math.floor(Math.random()*12);
-  n1++;
-  var n2 = Math.floor(Math.random()*12);
-  n2++;
-
-  document.getElementById("n1").innerHTML = n1;
-
-  document.getElementById("n2").innerHTML = n2;
-
-  document.getElementById("score").innerHTML = score;
-
-  product = n1 * n2;
-}
-
-setUp();
-
-/*auto selects the inputfield*/
+let score = 0;
+const message = document.getElementById("message")
 const inputField = document.getElementById("userInput");
-inputField.focus();
-inputField.select();
+const btn = document.getElementById("btn");
 
-/*checks answer, if correct reloads. updates score depending on answer*/
+let product;
+function setup() {
+  let n1 = Math.ceil(Math.random() * 12);
+  let n2 = Math.ceil(Math.random() * 12);
+  product = n1 * n2;
+
+  document.getElementById("problem").textContent = `${n1} × ${n2} =`;
+  document.getElementById("sr_problem").textContent = `${n1} × ${n2} =`;
+
+  inputField.value = "";
+  inputField.focus();
+}
+setup();
+
+// Checks answer. Updates score depending on answer
 function checkAnswer() {
   let userInput = document.getElementById("userInput").value;
-
-  if (product == userInput) {
+  if (product === Number(userInput)) {
     score++;
-    document.getElementById("message").style.visibility = "visible";
-    document.getElementById("message").innerHTML = "Correct";
-    document.getElementById("score").innerHTML = score;
-
-    inputField.value = "";
-    setUp();
+    message.innerHTML = "Correct, score: " + score;
   } else {
     score--;
-
-    document.getElementById("score").innerHTML = score;
-    document.getElementById("message").style.visibility = "visible";
-    document.getElementById("message").innerHTML = "Wrong";
-
-    inputField.value = "";
-    setUp();
+    message.innerHTML = "Wrong, score: " + score;
   }
+  setup();
 }
 
-/*Checks if the enterkey (return) is used*/
-function isReturnDown() {
-  if (event.code == "Enter" || event.keyCode == 13) {
-    checkAnswer();
-  }
-}
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") checkAnswer();
+})
+btn.addEventListener("click", () => {
+  checkAnswer();
+})

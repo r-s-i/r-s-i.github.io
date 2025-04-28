@@ -8,23 +8,19 @@
     content="Master the full multiplication table—from 1x1 to 12x12—in an interactive arithmetic quiz that sharpens your math skills." />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Master the Multiplication Table</title>
-
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <main id="main">
     <h1>Master the Multiplication Table (1-12)</h1>
-
-    <p><span id="n1"></span> &times; <span id="n2"></span> =</p>
-    <label for="userInput" class="sr_only">Your Answer</label>
-    <input type="text" id="userInput" onkeydown="isReturnDown()" />
-    <button onclick="checkAnswer()">Solve</button>
-    <p id="message">message</p>
-    <p>Score:</p>
-    <p id="score"></p>
+    <p id="message" aria-live="assertive">Score: 0</p>
+    <label for="userInput" class="sr_only" id="sr_problem"></label>
+    <p aria-hidden="true" id="problem"></p>
+    <input type="text" id="userInput" autocomplete="off" />
+    <button id="btn">Solve</button>
   </main>
   <footer>
     <a href="../development-projects.html">Exit</a>
@@ -32,7 +28,6 @@
       link)</a>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
