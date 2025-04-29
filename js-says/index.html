@@ -6,9 +6,7 @@
   <meta name="keywords" content="memory game" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>JavaScript Says</title>
-
   <link rel="stylesheet" type="text/css" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,19 +17,19 @@
     <h1>JavaScript Says</h1>
     <!--display-->
     <section id="game">
-      <section class="panes" id="pane-1" onmousedown="userClicked(1)"></section>
-      <section class="panes" id="pane-2" onmousedown="userClicked(2)"></section>
-      <section class="panes" id="pane-3" onmousedown="userClicked(3)"></section>
-      <section class="panes" id="pane-4" onmousedown="userClicked(4)"></section>
-      <section class="panes" id="pane-5" onmousedown="userClicked(5)"></section>
-      <section class="panes" id="pane-6" onmousedown="userClicked(6)"></section>
+      <section class="panes" id="pane-0"></section>
+      <section class="panes" id="pane-1"></section>
+      <section class="panes" id="pane-2"></section>
+      <section class="panes" id="pane-3"></section>
+      <section class="panes" id="pane-4"></section>
+      <section class="panes" id="pane-5"></section>
     </section>
     <!--input-->
     <section>
-      <button type="button" onmousedown="checkSimilarity()" id="check">
+      <button type="button" id="check">
         Check
       </button>
-      <button type="button" onmousedown="computerRunning()" id="play">
+      <button type="button" id="play">
         Play!
       </button>
     </section>
@@ -43,7 +41,6 @@
   </main>
   <footer>
     <a href="../development-projects.html">Exit</a>
-
     <a href="https://ko-fi.com/robiniversen" target="_blank" rel="noopener noreferrer">Made by Robin Iversen (Ko-fi
       link)</a>
   </footer>

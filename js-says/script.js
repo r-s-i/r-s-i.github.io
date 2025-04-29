@@ -1,75 +1,56 @@
-/*makes shortcuts for accessing the DOM*/
-var result = document.getElementById("result");
-var play = document.getElementById("play");
-var score = document.getElementById("score");
-
-var panesArray = ["pane-1", "pane-2", "pane-3", "pane-4", "pane-5", "pane-6"];
-
-/*initial setup, gets overwritten*/
-var pcGenSequence;
-var usedArray = [];
-var userGenSequence = [];
+const result = document.getElementById("result");
+const game = document.getElementById("game");
+const play = document.getElementById("play");
+const check = document.getElementById("check")
+const score = document.getElementById("score");
+const pcGenSequence = [];
+const userGenSequence = [];
 
 function computerRunning() {
-  /*hiddes playbutton*/
-  play.style.display = "none"; 
-  /*removes the score text*/
-  score.innerHTML = "";
-  /*hiddes the game over message*/
-  result.innerHTML = "";
-  /*makes pcGenSequence an array, and adds
-  the first number*/
-  if (!pcGenSequence) {
-    pcGenSequence = []
+  // Hides input & output
+  play.style.display = "none";
+  score.textContent = "";
+  result.textContent = "";
+  // Adds the first number
+  pcGenSequence.push(Math.ceil(Math.random() * 5));
+  // Shows pcGenSequence to the user
+  for (let i = 0; i < pcGenSequence.length; i++) {
+    const timeBefore = i * 1000;
+    const timeMiddle = timeBefore + 900;
+    const timeAfter = timeMiddle + 100;
+    const currentPane = document.getElementById(`pane-${pcGenSequence[i]}`)
+    window.setTimeout(function () { currentPane.style.backgroundColor = "black"; }, timeBefore)
+    /* makes it possible to see if there are same numbers after ach other*/
+    window.setTimeout(function () { currentPane.style.backgroundColor = "white"; }, timeMiddle)
+    window.setTimeout(function () { currentPane.style.backgroundColor = ""; }, timeAfter)
   }
-  pcGenSequence.push(Math.ceil(Math.random()*6));
-
-/*translate the computer generate array 
-into a text array*/
-usedArray = [];
-for (let i = 0; i < pcGenSequence.length; i++) {
-  usedArray.push(panesArray[pcGenSequence[i] - 1]) 
 }
 
-/*goes through each element of usedArray
-and graphically shows it to the user*/
-for (let i = 0; i < usedArray.length; i++) {
+// Adds user selected panes to an array
+game.addEventListener("click", (e) => {
+  if (/[0-5]/.test(e.target.id)) {
+    userGenSequence.push(e.target.id.split("-")[1]);
+  }
+})
+check.addEventListener("click", checkIfEqual);
+play.addEventListener("click", computerRunning);
 
-  let timeBefore = i * 1000;
-  let timeMiddle = timeBefore + 900;
-  let timeAfter = timeMiddle + 100;
-  // shows computer-chosen tiles in order
-  window.setTimeout(function(){document.getElementById(usedArray[i]).style.backgroundColor = "black";}, timeBefore)
-  /* makes it possible to see if there are same numbers after ach other*/
-  window.setTimeout(function(){document.getElementById(usedArray[i]).style.backgroundColor = "white";}, timeMiddle)
-  window.setTimeout(function(){document.getElementById(usedArray[i]).style.backgroundColor = "";}, timeAfter)
-}
-} // end of ComputerRunnning
-
-/*adds user selected panes to an array*/
-function userClicked(num) {
-  userGenSequence.push(num);
-} // end of userClicked
-
-
-function checkSimilarity() {
+function checkIfEqual() {
   if (userGenSequence.join("") == pcGenSequence.join("") && pcGenSequence.join("") != "") {
-    userGenSequence = [];
-    /*starts the next round*/
+    // Starts the next round
+    userGenSequence.length = 0;
     computerRunning();
   }
   else {
-    result.innerHTML = "Game Over"
-    /*shows final score to user*/
-    score.innerHTML = "Score: " + String(pcGenSequence.length - 1);
-    /*resets user and computer selected 
-    array*/
-    userGenSequence = [];
-    pcGenSequence = [];
-    /*makes the play button visible again*/
+    // Game over
+    result.textContent = "Game Over"
+    score.textContent = "Score: " + String(pcGenSequence.length - 1);
+    // Resets
+    userGenSequence.length = 0;
+    pcGenSequence.length = 0;
     play.style.display = "inline-block";
   }
-} // end of checkSimilarity
+}
 
 
 
