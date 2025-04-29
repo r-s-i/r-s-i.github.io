@@ -1,20 +1,19 @@
-html {
+:root {
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
-
+	color-scheme: dark;
 }
 
 body {
-	background-color: #333333;
-	color: #d3d3d3;
-
+	background-color: black;
+	color: lightgray;
 }
 
 h1 {
 	margin: 10px;
 }
 
-/*game/article*/
+/* Game */
 #game {
 	display: flex;
 	margin: 0 auto;
@@ -25,14 +24,14 @@ h1 {
 	height: 400px;
 }
 
-/*panes*/
-/*all*/
+/* Panes */
+/* All */
 .panes {
 	width: 100px;
 	margin: 10px;
 }
 
-/*for small screens*/
+/* For small screens */
 @media screen and (max-width: 600px) {
 	#game {
 		width: 300px;
@@ -40,7 +39,7 @@ h1 {
 	}
 }
 
-/*for tiny screens*/
+/* For tiny screens */
 @media screen and (max-width: 300px) {
 	#game {
 		width: 200px;
@@ -57,7 +56,7 @@ h1 {
 	background-color: black;
 }
 
-/*individual*/
+/* Individual */
 #pane-0 {
 	background-color: darkviolet;
 }
@@ -94,7 +93,7 @@ h1 {
 	margin-top: 20px;
 }
 
-/*for small screens*/
+/* For small screens */
 @media screen and (max-width: 600px) {
 
 	#play,
@@ -105,19 +104,18 @@ h1 {
 	}
 }
 
-/*game info*/
+/* Game info*/
 p {
 	font-size: 1.5rem;
 }
 
-/*footer*/
+/* Footer*/
 footer {
 	width: 100vw;
 	margin-top: 80px;
 }
 
 footer a {
-	color: green;
 	display: block;
 	margin: 50px;
 }
