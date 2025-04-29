@@ -1,8 +1,6 @@
 :root {
   color-scheme: dark;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: lightgray;
-  background: black;
 }
 
 body {
@@ -32,17 +30,8 @@ ul {
 }
 
 a {
-  color: dodgerblue;
   display: block;
   padding: 0.5rem;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:visited {
-  color: Orchid;
 }
 
 footer {

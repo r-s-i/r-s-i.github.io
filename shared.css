@@ -1,0 +1,18 @@
+:root {
+  color-scheme: dark;
+  color: lightgray;
+  background: black;
+}
+
+a {
+  color: dodgerblue;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: Orchid;
+}
