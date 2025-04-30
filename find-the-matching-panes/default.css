@@ -2,10 +2,11 @@ body {
   background: black;
   margin: 0;
   margin-top: 1vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
-main, nav {
+main,
+nav {
   padding: 0 1vh;
 }
 
@@ -17,7 +18,8 @@ main, nav {
   grid-gap: 1vh;
 }
 
-#grid-container button, #grid-container a{
+#grid-container button,
+#grid-container a {
   background-color: #a7a7a7;
   font-size: 4vw;
   line-height: 13.5vh;
@@ -28,7 +30,9 @@ button {
   cursor: pointer;
 }
 
-footer, #messages, header {
+footer,
+#messages,
+header {
   height: 13.5vh;
   width: 75vw;
   line-height: 13.5vh;
@@ -37,9 +41,13 @@ footer, #messages, header {
   color: lightgrey;
 }
 
-footer, header, #messages, #grid-container a {
+footer,
+header,
+#messages,
+#grid-container a {
   font-size: 1.25rem;
 }
+
 header {
   font-size: 3vw;
 }
@@ -53,7 +61,8 @@ footer {
   color: black;
 }
 
-footer:hover, #grid-container button:hover,
+footer:hover,
+#grid-container button:hover,
 #grid-container a:hover {
   background: lightgrey;
 }
@@ -61,8 +70,3 @@ footer:hover, #grid-container button:hover,
 a {
   text-decoration: none;
 }
-
-
-
-
-

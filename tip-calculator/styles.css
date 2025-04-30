@@ -2,7 +2,7 @@
 
 * {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 main {
@@ -13,18 +13,22 @@ main {
 body {
   background-color: dimGrey;
 }
+
 article {
   background-color: white;
   box-shadow: 5px 6px 6px 0px #000000;
   overflow: scroll;
-  scrollbar-width: none; /*Firefox*/
+  scrollbar-width: none;
+  /*Firefox*/
 }
+
 article::-webkit-scrollbar {
   display: none;
 }
 
-h1, h2 {
-  font-size:1.25rem;
+h1,
+h2 {
+  font-size: 1.25rem;
   margin: 0.5rem;
 }
 
@@ -46,7 +50,7 @@ footer {
   background: 260px
 }
 
-footer a{
+footer a {
   margin-top: 2rem;
   margin-bottom: 1.63rem;
   padding: 0.75rem;
@@ -72,18 +76,20 @@ footer a:active {
   visibility: hidden;
 }
 
-#group_question > input {
+#group_question>input {
   display: inline-block;
   margin-top: -1px;
   vertical-align: middle;
   margin-right: -4px;
 }
-#group_question > label {
+
+#group_question>label {
   padding: 0.4rem;
   margin-left: -4px;
 }
 
-#price_and_percentage > input, #num_of_persons {
+#price_and_percentage>input,
+#num_of_persons {
   display: block;
   margin: 0 auto;
   width: 200px;

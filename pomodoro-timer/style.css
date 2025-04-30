@@ -5,21 +5,27 @@
 
 html {
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 	background-color: black;
 }
 
 body {
-  background-color: hsl(0, 0%, 5%);
+	background-color: hsl(0, 0%, 5%);
 	margin: 0 auto;
 	width: 370px;
 }
 
-#timer, #settings, #info, footer {
+#timer,
+#settings,
+#info,
+footer {
 	margin: 2rem;
 }
 
-h1, h2, h3,p {
+h1,
+h2,
+h3,
+p {
 	padding: 0.5rem;
 }
 
@@ -34,6 +40,7 @@ header {
 	padding-top: 1rem;
 	background-color: hsl(0, 0%, 5%);
 }
+
 header h1 {
 	font-size: 2rem;
 }
@@ -59,9 +66,11 @@ button {
 	color: #d3d3d3;
 }
 
-#output, #clock {
+#output,
+#clock {
 	display: none;
 }
+
 #clock {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -73,6 +82,7 @@ button {
 	margin: 0 auto;
 	text-align: left;
 }
+
 #settings h2 {
 	font-size: 1.4rem;
 	text-align: center;
@@ -85,6 +95,7 @@ button {
 #sound {
 	width: 5rem;
 }
+
 #notification {
 	width: 5rem;
 }
@@ -109,6 +120,7 @@ footer {
 	background-color: hsl(0, 0%, 5%);
 	padding-bottom: 1rem;
 }
+
 footer a {
 	display: block;
 	padding: 1rem;
@@ -137,16 +149,3 @@ footer a {
 
 
 /*ids:*/
-
-
-
-
-
-
-
-
-
-
-
-
-

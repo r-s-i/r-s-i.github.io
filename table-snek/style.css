@@ -1,7 +1,7 @@
 /*General*/
 :root {
   color-scheme: dark light;
-  font-family: 'Times New Roman', Times, serif; 
+  font-family: serif;
   font-size: xx-large;
 }
 
@@ -9,13 +9,17 @@
   padding: 0px;
   margin: 0px;
 }
-main, footer {
+
+main,
+footer {
   margin: 0 auto;
   text-align: center;
   list-style: none;
 }
-li, a {
-  padding: 0.75rem; 
+
+li,
+a {
+  padding: 0.75rem;
 }
 
 h1 {
@@ -36,13 +40,14 @@ table {
 }
 
 .wider {
- --gameBoardSize: 58vh;
+  --gameBoardSize: 58vh;
 }
 
 td {
   width: calc(var(--gameBoardSize) / 32);
   height: calc(var(--gameBoardSize) / 32);
 }
+
 @media (hover: hover) and (pointer: fine) {
   td {
     width: 20px;
@@ -52,24 +57,27 @@ td {
 
 /*For Snek, js:*/
 .snekBody {
-  background-color: ForestGreen; 
+  background-color: ForestGreen;
 }
+
 .snekHead {
   background: MediumSeaGreen;
 }
+
 .egg {
-  background: beige ;
+  background: beige;
 }
 
 /*For Touch devices:*/
 .invisible {
   visibility: hidden;
 }
+
 @media (pointer: coarse) {
   #forTouchDevices {
     visibility: visible;
     display: grid;
-      grid-template-areas:
+    grid-template-areas:
       "up up"
       "left right"
       "down down"
@@ -77,26 +85,26 @@ td {
     margin: 0 auto;
     height: 200px;
     max-width: 800px;
- 
+
   }
+
   #ArrowUp {
     grid-area: up;
   }
+
   #ArrowLeft {
     grid-area: left;
   }
+
   #ArrowRight {
     grid-area: right;
   }
+
   #ArrowDown {
     grid-area: down;
   }
+
   #Enter {
     grid-area: enter;
   }
 }
-
-
-
-
-

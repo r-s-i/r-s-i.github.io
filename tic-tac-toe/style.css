@@ -1,12 +1,12 @@
 /*Sematic and tags:*/
 html {
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 }
 
 body {
-  background-color: #333333;
-  color: #d3d3d3;	
+	background-color: #333333;
+	color: #d3d3d3;
 }
 
 h1 {
@@ -49,7 +49,8 @@ footer a:hover {
 	margin: 0 auto;
 }
 
-#output-tie, #output-gameover {
+#output-tie,
+#output-gameover {
 	font-size: 18px;
 }
 
@@ -64,7 +65,7 @@ footer a:hover {
 #button {
 	font-size: 20px;
 	background-color: black;
-	color: #d3d3d3;	
+	color: #d3d3d3;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	visibility: hidden;
@@ -75,14 +76,10 @@ footer a:hover {
 	#grid {
 		width: 500px;
 	}
+
 	.panes {
 		width: 125px;
 		height: 125px;
 	}
-	
+
 }
-
-
-
-
-

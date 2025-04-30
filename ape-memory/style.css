@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark light;
-  font-family: 'Times New Roman', Times, serif; 
+  font-family: serif;
   font-size: large;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .wider {
- --gameBoardSize: 70vh;
+  --gameBoardSize: 70vh;
 }
 
 * {
@@ -20,6 +20,7 @@
 h1 {
   text-align: center;
 }
+
 main {
   border-bottom: white 1px solid;
 }
@@ -29,6 +30,7 @@ main {
     border: black 1px solid;
   }
 }
+
 #gameBoard {
   display: grid;
   margin: 0 auto;
@@ -37,7 +39,7 @@ main {
   grid-template-columns: auto auto auto auto auto auto auto auto;
 }
 
-#gameBoard > div{
+#gameBoard>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +47,7 @@ main {
   width: calc(var(--gameBoardSize) / 8);
 }
 
-#gameBoard > div span{
+#gameBoard>div span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +67,7 @@ footer {
   margin-top: 2rem;
 }
 
-#gameBoard > #gameOverDiv {
+#gameBoard>#gameOverDiv {
   width: 100%;
   display: block;
   position: absolute;
@@ -83,21 +85,26 @@ button {
 .computerActivated {
   background: darkblue;
 }
+
 .hidden {
   background: grey;
   color: grey;
   border: 1px solid black;
 }
+
 .active {
   border: 1px solid grey;
 }
+
 .clickedCorrectly {
   background-color: darkgreen;
   color: white;
 }
+
 .disabled {
   pointer-events: none;
 }
+
 .invisible {
   visibility: hidden;
 }
