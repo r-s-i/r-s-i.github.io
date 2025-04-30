@@ -64,3 +64,9 @@ input {
 #reset_button {
 	display: none;
 }
+
+.large_txt {
+	color: black;
+	line-height: 5;
+	font-size: 3rem;
+}

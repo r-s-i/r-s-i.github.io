@@ -1,19 +1,19 @@
-const alphabetArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
-                    "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const alphabetArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+  "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 /*Possible responses if the user picks a wrong letter:*/
-const wrongLetterLines = ["Nope.", "Sorry, my word doesn't have that letter.", 
-                        "No, try again.", "Wrong.", "Some of these words are really hard.", 
-                        "Try one of these: e, t, a, o, i, n, s, h, r, d, l, or u", 
-                        "Maybe try using x, y, or z. What's the harm?"];
+const wrongLetterLines = ["Nope.", "Sorry, my word doesn't have that letter.",
+  "No, try again.", "Wrong.", "Some of these words are really hard.",
+  "Try one of these: e, t, a, o, i, n, s, h, r, d, l, or u",
+  "Maybe try using x, y, or z. What's the harm?"];
 
 function getWrongLetterLines() {
-  let randomNum = Math.floor(Math.random()*wrongLetterLines.length);
+  let randomNum = Math.floor(Math.random() * wrongLetterLines.length);
   return wrongLetterLines[randomNum];
 }
 
 function pickRandomWord() {
-  let pickedNum = Math.floor(Math.random()*words.length);
+  let pickedNum = Math.floor(Math.random() * words.length);
   return words[pickedNum];
 } let pickedWord = pickRandomWord();
 
@@ -24,8 +24,8 @@ function makeArrOutOfWord() {
 function showWordLengthGraphically() {
   for (let i = 0; i < wordAsArr.length; i++) {
     if (true) {
-      document.getElementById("letter_"+i).innerHTML = "_ "
-    }  
+      document.getElementById("letter_" + i).innerHTML = "_ "
+    }
   }
 } showWordLengthGraphically();
 
@@ -53,7 +53,7 @@ function guess() {
   /*Assignes what user entered to userInput:*/
   let userInput = inputField.value;
   userInput = userInput.toLowerCase();
-  
+
 
   /*If the user already has guessed that letter, inform the user and exit function:*/
   if (guessedLetters.includes(userInput)) {
@@ -64,7 +64,7 @@ function guess() {
 
   /*If user input is not one letter from the English alphabet return with a message:*/
   let allowedsymbol = false;
-  for(let i = 0; i < alphabetArr.length; i++) {
+  for (let i = 0; i < alphabetArr.length; i++) {
     if (userInput == alphabetArr[i] && userInput.length == 1) {
       allowedsymbol = true;
     }
@@ -79,12 +79,12 @@ function guess() {
   for (let i = 0; i < wordAsArr.length; i++) {
     if (userInput == wordAsArr[i] && allowedsymbol) {
       guessedLetters.push(userInput);
-      document.getElementById("letter_"+i).innerHTML = wordAsArr[i];
+      document.getElementById("letter_" + i).innerHTML = wordAsArr[i];
       correctLettersCounter++
       inputField.value = "";
-    }  
+    }
   }
-  
+
   /*If user guessed incorrectly, draw one more detail:*/
   if (wordAsArr.includes(userInput) === false && picCounter < 10) {
     picCounter++;
@@ -102,7 +102,7 @@ function guess() {
     /*Makes the reset button appears, and the guess button disappears:*/
     resetButton.style.display = "block";
     guessButton.style.display = "none"
-    setTimeout(function(){message.innerHTML = `The answer was "${pickedWord}"`;}, 2000);
+    setTimeout(function () { message.innerHTML = `The answer was "${pickedWord}"`; }, 2000);
     /*For resetting:*/
     isGameOver = true;
   }
@@ -110,9 +110,12 @@ function guess() {
   /*If the user won, show it:*/
   if (correctLettersCounter == wordAsArr.length) {
     /*Displays "win screen" (picture):*/
-    display.style.backgroundImage = "url('img/11.png')";
+    display.style.backgroundImage = "url('img/1.png')";
     /*Congratulates the user (text):*/
     message.innerHTML = "Congratulation!";
+    message.innerHTML += "<br> <span class='large_txt'>You WON!</span>";
+    message.innerHTML += "<br>No stick figures where harmed in the making of this game.";
+
     /*Makes the reset button appears, and the guess button disappears:*/
     resetButton.style.display = "block";
     guessButton.style.display = "none";
