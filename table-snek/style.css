@@ -1,6 +1,5 @@
 /*General*/
 :root {
-  color-scheme: dark light;
   font-family: serif;
   font-size: xx-large;
 }
@@ -30,7 +29,6 @@ h1 {
 /*For canvas:*/
 table {
   margin: 0 auto;
-  background: black;
   border: 1px solid white;
   border-collapse: collapse;
 }

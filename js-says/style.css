@@ -4,11 +4,6 @@
 	color-scheme: dark;
 }
 
-body {
-	background-color: black;
-	color: lightgray;
-}
-
 h1 {
 	margin: 10px;
 }
@@ -118,8 +113,4 @@ footer {
 footer a {
 	display: block;
 	margin: 50px;
-}
-
-footer a:hover {
-	text-decoration: none;
 }

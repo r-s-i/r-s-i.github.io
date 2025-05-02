@@ -5,7 +5,6 @@ html {
 }
 
 body {
-	background-color: #333333;
 	color: #d3d3d3;
 }
 
@@ -64,8 +63,6 @@ footer a:hover {
 
 #button {
 	font-size: 20px;
-	background-color: black;
-	color: #d3d3d3;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	visibility: hidden;

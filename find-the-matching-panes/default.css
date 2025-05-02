@@ -1,5 +1,4 @@
 body {
-  background: black;
   margin: 0;
   margin-top: 1vh;
   font-family: sans-serif;
@@ -20,7 +19,6 @@ nav {
 
 #grid-container button,
 #grid-container a {
-  background-color: #a7a7a7;
   font-size: 4vw;
   line-height: 13.5vh;
   text-align: center;
@@ -38,7 +36,6 @@ header {
   line-height: 13.5vh;
   margin: 0 auto;
   text-align: center;
-  color: lightgrey;
 }
 
 footer,
@@ -56,15 +53,10 @@ h1 {
   margin: 0;
 }
 
-footer {
-  background: #a7a7a7;
-  color: black;
-}
-
 footer:hover,
 #grid-container button:hover,
 #grid-container a:hover {
-  background: lightgrey;
+  background: lightgray;
 }
 
 a {

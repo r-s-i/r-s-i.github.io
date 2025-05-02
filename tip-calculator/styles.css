@@ -1,5 +1,4 @@
 /*Generic selectors:*/
-
 * {
   text-align: center;
   font-family: sans-serif;
@@ -10,16 +9,10 @@ main {
   margin: 0 auto;
 }
 
-body {
-  background-color: dimGrey;
-}
-
 article {
-  background-color: white;
-  box-shadow: 5px 6px 6px 0px #000000;
   overflow: scroll;
   scrollbar-width: none;
-  /*Firefox*/
+  border: 2px solid lightgray;
 }
 
 article::-webkit-scrollbar {
@@ -34,7 +27,6 @@ h2 {
 
 input {
   display: block;
-  border: 1px solid dimGrey;
 }
 
 button {
@@ -54,8 +46,6 @@ footer a {
   margin-top: 2rem;
   margin-bottom: 1.63rem;
   padding: 0.75rem;
-  border: solid 1px black;
-  background-color: white;
   display: inline-block;
   box-shadow: 5px 6px 6px 0px #000000;
 }
@@ -66,7 +56,6 @@ footer a:active {
 
 /*Ids:*/
 #calculator_proper {
-  border: black 1px solid;
   width: 250px;
   height: 550px;
   margin: 0 auto;

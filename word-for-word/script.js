@@ -34,7 +34,7 @@ function getFont(font) {
 /*Footnote toggle:*/
 isFootnotesOn = true;
 function toggle() {
-    isFootnotesOn = !isFootnotesOn;
+  isFootnotesOn = !isFootnotesOn;
 }
 
 /*Applying user selected pixels:*/
@@ -53,7 +53,7 @@ function run(arr) {
   ApplyingPixels();
   function counter(counterArr) {
     let i = 0;
-    interFunc = setInterval(function() {
+    interFunc = setInterval(function () {
       currentWord = counterArr[i];
       shownWords.push(currentWord);
       $("#output").innerHTML = currentWord;
@@ -91,27 +91,27 @@ function run(arr) {
     /*Replaces new lines with space:*/
     userInput = userInput.replaceAll("\n", " "); // Line feed.
     /*Splits up words to make more digestible:*/
-    userInput = userInput.replaceAll('."','." '); // Dialog.
+    userInput = userInput.replaceAll('."', '." '); // Dialog.
     userInput = userInput.replaceAll(`,"`, `," `); // Dialog.
-    userInput = userInput.replaceAll("-","- "); // Hyphen.
-    userInput = userInput.replaceAll("–","– "); // En dash.
-    userInput = userInput.replaceAll("—"," — "); // Em dash.
-    userInput = userInput.replaceAll("/"," / "); // Em dash.
+    userInput = userInput.replaceAll("-", "- "); // Hyphen.
+    userInput = userInput.replaceAll("–", "– "); // En dash.
+    userInput = userInput.replaceAll("—", " — "); // Em dash.
+    userInput = userInput.replaceAll("/", " / "); // Em dash.
 
     /*Makes userInput into an array:*/
     userInputArr = userInput.split(" ");
-    
+
     /*Removes footnotes (eks: [1]):*/
     if (!isFootnotesOn) {
-      const footnoteRemover = (arr)=> {
-       for (let i = 0; i < arr.length; i++) {
-        while (arr[i].includes("[") && arr[i].includes("]")) {
-          arr[i] = arr[i].slice(0, arr[i].indexOf("[")) + arr[i].slice(arr[i].indexOf("]")+1, arr.length-1);
+      const footnoteRemover = (arr) => {
+        for (let i = 0; i < arr.length; i++) {
+          while (arr[i].includes("[") && arr[i].includes("]")) {
+            arr[i] = arr[i].slice(0, arr[i].indexOf("[")) + arr[i].slice(arr[i].indexOf("]") + 1, arr.length - 1);
+          }
         }
-       }
       };
       footnoteRemover(userInputArr);
-      
+
     }
     /*Removes " ":*/
     const spaceRemover = (value) => {
@@ -154,44 +154,44 @@ function reset() {
 
 /*Event listners:*/
 /*Open button, settings:*/
-$("#open_settings").addEventListener("click", function() {
+$("#open_settings").addEventListener("click", function () {
   $("#settings").style.display = "block";
 });
 
 /*Close button, settings:*/
-$("#close_settings").addEventListener("click", function() {
+$("#close_settings").addEventListener("click", function () {
   $("#settings").style.display = "none";
 });
 
 /*Pauses while reading:*/
- let paused = false;
- let doneReading = false;
- let newUserInputArr = [];
- $("#output_section").addEventListener("click", function pause() {
-   if (doneReading) {
-     return;
-   }
-   else {
-     paused = !paused;
-     /*Pauses the program:*/
-     if (paused) {
-       window.clearInterval(interFunc);
-       newUserInputArr = userInputArr.slice(shownWords.length, userInputArr.length);
-     }
-     /*Restarts the program:*/
-     else {
-       run(newUserInputArr);
-     }
-   }
- });
+let paused = false;
+let doneReading = false;
+let newUserInputArr = [];
+$("#output_section").addEventListener("click", function pause() {
+  if (doneReading) {
+    return;
+  }
+  else {
+    paused = !paused;
+    /*Pauses the program:*/
+    if (paused) {
+      window.clearInterval(interFunc);
+      newUserInputArr = userInputArr.slice(shownWords.length, userInputArr.length);
+    }
+    /*Restarts the program:*/
+    else {
+      run(newUserInputArr);
+    }
+  }
+});
 
 /*Resets:*/
-$("#reset_button").addEventListener("click", function() {
-   reset();
+$("#reset_button").addEventListener("click", function () {
+  reset();
 });
 
 /*Starts rereading the text:*/
-$("#read_again_button").addEventListener("click", function() {
+$("#read_again_button").addEventListener("click", function () {
   $("#options").style.display = "none";
   doneReading = false; // Used in pause();
   run(shownWords);

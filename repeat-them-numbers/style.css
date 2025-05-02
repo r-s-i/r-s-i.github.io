@@ -1,5 +1,4 @@
     :root {
-      color-scheme: dark;
       font-family: sans-serif;
     }
 
@@ -10,7 +9,6 @@
     }
 
     #canvas {
-      background: black;
       width: 90vw;
       height: 67.5vw;
       max-width: 800px;

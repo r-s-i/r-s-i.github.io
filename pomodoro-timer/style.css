@@ -1,18 +1,12 @@
-/*Shared*/
-* {
-	color: hsl(120, 100%, 28%);
-}
-
 html {
 	text-align: center;
 	font-family: sans-serif;
-	background-color: black;
 }
 
 body {
-	background-color: hsl(0, 0%, 5%);
 	margin: 0 auto;
 	width: 370px;
+	border: 2px solid lightgray;
 }
 
 #timer,
@@ -38,7 +32,6 @@ p {
 /*Header*/
 header {
 	padding-top: 1rem;
-	background-color: hsl(0, 0%, 5%);
 }
 
 header h1 {
@@ -46,13 +39,8 @@ header h1 {
 }
 
 /*Main*/
-#timer {
-	background-color: hsl(0, 0%, 5%);
-}
-
 button {
 	display: block;
-	background-color: hsl(0, 0%, 0%);
 	margin: 1rem auto;
 	font-weight: 700;
 	font-size: 1.2rem;
@@ -74,11 +62,9 @@ button {
 #clock {
 	font-weight: bold;
 	font-size: 1.2rem;
-	color: hsl(0, 0%, 70%)
 }
 
 #settings {
-	background-color: hsl(0, 0%, 5%);
 	margin: 0 auto;
 	text-align: left;
 }
@@ -108,7 +94,6 @@ input {
 	padding: 1rem;
 	font-size: 1rem;
 	width: 3rem;
-	background-color: hsl(0, 0%, 0%);
 }
 
 #solid-setting {
@@ -117,14 +102,12 @@ input {
 
 /*Footer*/
 footer {
-	background-color: hsl(0, 0%, 5%);
 	padding-bottom: 1rem;
 }
 
 footer a {
 	display: block;
 	padding: 1rem;
-	color: hsl(120, 100%, 27%);
 }
 
 

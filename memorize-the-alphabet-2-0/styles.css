@@ -1,21 +1,19 @@
 /*Tag styles:*/
 body {
-  background-color: hsl(0, 0%, 5%);
-  color: hsl(0, 0%, 80%);
   font-size: 1.25rem;
   text-align: center;
 }
 
-textarea, button {
-  background-color: hsl(0, 0%, 10%);
-  color: hsl(0, 0%, 80%);
+textarea,
+button {
   border: none;
   font-size: 2rem;
 }
+
 textarea {
   width: 14rem;
   height: 7rem;
-  resize:none;
+  resize: none;
 }
 
 button {
@@ -31,11 +29,6 @@ footer {
 footer a {
   padding: 1.5rem;
   font-size: 1.5rem;
-  color: green;
-}
-
-footer a:visited {
-  color: red;
 }
 
 /*Ids:*/
