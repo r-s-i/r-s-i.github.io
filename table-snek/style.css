@@ -14,18 +14,9 @@ table {
   display: none;
 }
 
-#buttons {
-  display: grid;
-  grid-template-areas:
-  "up up"
-  "left right"
-  "down down"
-  "enter enter";
-}
 
 button {
-  margin: 2px;
-  font-size: 2rem;
+  margin: auto;
 }
 
 #ArrowUp {
@@ -68,22 +59,25 @@ a {
   background: beige;
 }
 
-@media (pointer: coarse) {
-
-table {
-  width: min(60vw, 60vh);
-  height: min(60vw, 60vh);
+.triangles {
+  position: absolute;
+  width: min(100vw, 100vh);
+  height: min(100vw, 100vh);
+  left: calc(50% - min(50vw, 50vh));
 }
-  #forTouchDevices {
-    visibility: visible;
-    display: grid;
-    grid-template-areas:
-      "up up"
-      "left right"
-      "down down"
-      "enter enter";
-    margin: 0 auto;
-    height: 200px;
-    max-width: 800px;
-  }
+
+.triangles.ArrowUp {
+  clip-path: polygon(50% 50%, 100% 0%, 0% 0%);
+
+}
+.triangles.ArrowRight {
+  clip-path: polygon(50% 50%, 100% 100%, 100% 0%);
+}
+.triangles.ArrowLeft {
+  clip-path: polygon(50% 50%, 0% 0%, 0% 100%);
+
+
+}
+.triangles.ArrowDown {
+  clip-path: polygon(100% 100%, 50% 50%, 0% 100%);
 }

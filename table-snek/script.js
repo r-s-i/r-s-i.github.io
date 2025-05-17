@@ -13,6 +13,7 @@ let isGameOver = false;
 let gamePadLoop;
 const allowedInputs = ["arrowup", "arrowdown", "arrowleft", "arrowright", "w", "a", "s", "d"]
 
+
 // EventListeners:
 // For Keyboard:
 window.addEventListener('keydown', (event) => {
@@ -44,12 +45,14 @@ window.addEventListener('keydown', (event) => {
 });
 
 // For buttons
-window.addEventListener('click', (event) => {
-  if (event.target.id !== "Enter") {
-    keyPressed = event.target.id;
-  }
+document.querySelectorAll('.triangles').forEach(e => {
+  e.addEventListener('click', (e) => {
+    keyPressed = e.target.classList[1];
+  });
+});
+Enter.addEventListener('click', (event) => {
   // Restarts game:
-  if (event.target.id === "Enter" && isGameOver) {
+  if (isGameOver) {
     location.reload();
   }
 });
@@ -104,6 +107,7 @@ function showSnek() {
   for (let i = 0; i < snek.body.length; i++) {
     let square = document.getElementById(`${snek.body[0].x}_${snek.body[0].y}`);
     square.classList.add("snekHead")
+
     for (let x = 0; x < table.width; x++) {
       for (let y = 0; y < table.height; y++) {
         if (snek.body[i].x === x && snek.body[i].y === y) {
@@ -169,6 +173,10 @@ function gameOver(won = false) {
   isGameOver = true;
   canvas.removeChild(canvas.firstChild);
   canvas.removeChild(canvas.firstChild);
+  document.querySelectorAll('.triangles').forEach(e => {
+    e.remove();
+});
+
   const p = document.createElement("p")
   const alwaysInMessage = "<br> Press Enter (or A on the Xbox controller) to start again";
   document.getElementById("Enter").style.display = "block";
