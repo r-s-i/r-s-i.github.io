@@ -1,16 +1,3 @@
-/*For Styling:*/
-/*Checks dimensions:*/
-function checkDimensions() {
-  const gameBoard = document.getElementById("gameBoard");
-  if (window.innerWidth > window.innerHeight) {
-    gameBoard.className = "wider";
-  } else {
-    gameBoard.className = "taller";
-  }
-}
-window.addEventListener("resize", checkDimensions);
-checkDimensions();
-
 // The Game:
 // Global variables:
 let loopId;
@@ -29,6 +16,7 @@ const allowedInputs = ["arrowup", "arrowdown", "arrowleft", "arrowright", "w", "
 // EventListeners:
 // For Keyboard:
 window.addEventListener('keydown', (event) => {
+  event.preventDefault();
   if (allowedInputs.includes(event.key.toLowerCase())) {
     keyPressed = event.key;
     switch (keyPressed.toLocaleLowerCase()) {
@@ -55,7 +43,7 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-// For touchscreen
+// For buttons
 window.addEventListener('click', (event) => {
   if (event.target.id !== "Enter") {
     keyPressed = event.target.id;
@@ -82,6 +70,7 @@ function tableMaker(width, height) {
   }
   return { width: width, height: height, tableSize: height * width }
 }
+
 
 // Snek related:
 function createSnek() {
@@ -182,6 +171,7 @@ function gameOver(won = false) {
   canvas.removeChild(canvas.firstChild);
   const p = document.createElement("p")
   const alwaysInMessage = "<br> Press Enter (or A on the Xbox controller) to start again";
+  document.getElementById("Enter").style.display = "block";
   if (!won) {
     p.innerHTML = "Game over. Score: " + score + alwaysInMessage;
   }
