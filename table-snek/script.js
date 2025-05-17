@@ -17,8 +17,8 @@ const allowedInputs = ["arrowup", "arrowdown", "arrowleft", "arrowright", "w", "
 // EventListeners:
 // For Keyboard:
 window.addEventListener('keydown', (event) => {
-  event.preventDefault();
   if (allowedInputs.includes(event.key.toLowerCase())) {
+    event.preventDefault();
     keyPressed = event.key;
     switch (keyPressed.toLocaleLowerCase()) {
       case "w":
