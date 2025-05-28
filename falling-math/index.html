@@ -13,62 +13,41 @@
   <meta name="keywords" content="game, math, free, brain training">
   <link rel="stylesheet" href="../shared.css">
   <link rel="stylesheet" href="style.css">
-  <script src="./vue.global.js"></script>
-  <script src="./app.js" defer></script>
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <h1>Falling Math</h1>
+  </header>
+  <main>
+    <div id="info">
+      <span id="pointsOutput">Points</span>
+      <span id="livesOutput">❤️</span>
+    </div>
 
-  <main id="grid-container">
-    <header v-if="!isDone">
-      <h1>Falling Math</h1>
-      <p>Level: {{level}} </p>
-      <p>Points: {{points}}</p>
-      <p v-if="lives!==1">Lives: {{lives}}</p>
-      <p v-else>Life: {{lives}}</p>
-    </header>
-    <header v-else>
-      <h1>Falling Math</h1>
-      <p>Points: {{points}}</p>
-    </header>
-    <section id="game-area">
-      <section class="row">
+    <section id="gameArea">
+      <section class="row" id="firstQuestionRow">
+      </section>
+      <section class="row" id="secondQuestionRow">
+      </section>
+      <section class="row" id="thirdQuestionRow">
+      </section>
+      <section class="row" id="answersRow">
         <section>
-          {{panesArray[0]}}
         </section>
-      </section>
-      <section class="row">
-        <section :class="[{ lightRed: panesArray[1] !== '' && !isDone }]" @click="reloads = true">
-          {{panesArray[1]}}
+        <section>
         </section>
-      </section>
-      <section class="row">
-        <section :class="[{ red: panesArray[2] !== '' && !isDone}]">
-          {{panesArray[2]}}
+        <section>
         </section>
-      </section>
-
-      <section class="row">
-        <section @click="checkAnswer(answersArray[0])" :class="{ green: isActive }">
-          {{!isDone ? answersArray[0] : ""}}
-        </section>
-        <section @click="checkAnswer(answersArray[1])" :class="{ green: isActive }">
-          {{!isDone ? answersArray[1] : ""}}
-        </section>
-        <section @click="checkAnswer(answersArray[2])" :class="{ green: isActive }">
-          {{!isDone ? answersArray[2] : ""}}
-        </section>
-        <section @click="checkAnswer(answersArray[3])" :class="{ green: isActive }">
-          {{!isDone ? answersArray[3] : ""}}
+        <section>
         </section>
       </section>
     </section>
-    <a href="../development-projects.html" id="footer">
-      <footer>
-        Exit
-      </footer>
-    </a>
   </main>
+  <footer>
+    <a href="../development-projects.html" id="footer">Exit</a>
+  </footer>
 </body>
 
 </html>

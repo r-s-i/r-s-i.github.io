@@ -1,71 +1,60 @@
-header {
-  grid-area: header;
-  display: grid;
-  width: 90vw;
-  max-width: 500px;
-  text-align: center;
-  min-height: 10vh;
+#info {
+  height: 10%;
+}
+
+#info,
+footer {
+  align-items: center;
+  justify-content: center;
+}
+
+#info,
+footer,
+#answersRow,
+.row,
+section {
+  display: flex;
+}
+
+span {
+  margin-right: 15px;
+}
+
+main {
+  height: 70vh;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 h1 {
   margin: 0;
+  text-align: center
 }
 
-p {
-  text-align: right;
-  margin: 0 3px 0 0;
+#gameArea {
+  flex-direction: column;
+  height: 90%;
 }
 
-#footer {
-  grid-area: footer;
-  display: grid;
+section {
+  border: 2px solid lightgray;
+  flex: 1;
   justify-content: center;
+}
+
+section section {
   align-items: center;
-  min-height: 10vh;
-  font-size: 24px;
+  height: 100%;
 }
 
-#game-area {
-  grid-area: gameArea;
-  display: grid;
-  min-height: 60vh;
-  border-top: 1px solid whitesmoke;
-  border-right: 1px solid whitesmoke;
+#answersRow section {
+  word-break: break-word;
 }
 
-.row {
-  display: flex;
-  flex-wrap: nowrap;
+footer {
+  height: 10vh;
 }
 
-.row>section {
-  width: 100%;
-  min-height: 15vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.25rem;
-  font-weight: 700;
-  border-bottom: 1px solid whitesmoke;
-  border-left: 1px solid whitesmoke;
-  padding: 4px;
-}
-
-#grid-container {
-  display: grid;
-  justify-content: center;
-  grid-template-areas:
-    "header header header header"
-    "gameArea gameArea gameArea gameArea"
-    "gameArea gameArea gameArea gameArea"
-    "gameArea gameArea gameArea gameArea"
-    "gameArea gameArea gameArea gameArea"
-    "footer footer footer footer";
-  grid-gap: 1vh;
-  min-height: 90vh;
-}
-
-/*Vue styles*/
 .lightRed {
   background-color: rgba(255, 0, 0, 0.20);
 }
@@ -74,9 +63,8 @@ p {
   background-color: rgba(255, 0, 0, 0.40);
 }
 
-.green {
-  animation: fadeOut 1s 1;
-
+.fadeOut {
+  animation: fadeOut 1s ease-in-out;
 }
 
 @keyframes fadeOut {
