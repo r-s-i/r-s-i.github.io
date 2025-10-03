@@ -2,11 +2,14 @@ let score = 0;
 const message = document.getElementById("message")
 const inputField = document.getElementById("userInput");
 const btn = document.getElementById("btn");
+let settings = document.getElementById("settings");
+settings = JSON.parse(settings.innerHTML);
+const maxInt = settings.maxInt
 
 let product;
 function setup() {
-  let n1 = Math.ceil(Math.random() * 12);
-  let n2 = Math.ceil(Math.random() * 12);
+  let n1 = Math.ceil(Math.random() * maxInt);
+  let n2 = Math.ceil(Math.random() * maxInt);
   product = n1 * n2;
 
   document.getElementById("problem").textContent = `${n1} × ${n2} =`;

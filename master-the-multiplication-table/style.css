@@ -7,9 +7,27 @@
   display: block;
 }
 
+
+ul {
+  list-style-type: none;
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0;
+}
+li {
+  flex: 1;
+  padding: 0.5rem 
+}
+
 footer a {
   display: block;
   margin: 1rem;
+}
+
+.invisible {
+  display:none;
 }
 
 .sr_only {

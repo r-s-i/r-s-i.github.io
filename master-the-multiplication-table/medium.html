@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="multiplication, arithmetic, quiz, game" />
+  <meta name="description"
+    content="Master the full multiplication table—from 1x1 to 20x20 — in an interactive arithmetic quiz that sharpens your math skills." />
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master the Multiplication Table</title>
+  <link rel="stylesheet" type="text/css" href="../shared.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main id="main">
+    <h1>Master the Multiplication Table (1 to 20)</h1>
+    <p id="message" aria-live="assertive">Score: 0</p>
+    <label for="userInput" class="sr_only" id="sr_problem"></label>
+    <p aria-hidden="true" id="problem"></p>
+    <input type="text" id="userInput" autocomplete="off" />
+    <button id="btn">Solve</button>
+  </main>
+  <div id="settings" class="invisible">{"maxInt": 20}</div>
+  <footer>
+     <a href="./" rel="noopener noreferrer">Back</a>
+  </footer>
+
+</body>
+
+</html>
