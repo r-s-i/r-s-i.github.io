@@ -94,27 +94,15 @@ function createSnek() {
 }
 
 function showSnek() {
-  // Remove the previous snek picture:
-  for (let x = 0; x < table.width; x++) {
-    for (let y = 0; y < table.height; y++) {
-      let square = document.getElementById(`${x}_${y}`);
-      square.classList.remove("snekBody")
-      square.classList.remove("snekHead")
-    }
-  }
-
   // Repaints the Snek:
-  for (let i = 0; i < snek.body.length; i++) {
-    let square = document.getElementById(`${snek.body[0].x}_${snek.body[0].y}`);
-    square.classList.add("snekHead")
-
-    for (let x = 0; x < table.width; x++) {
-      for (let y = 0; y < table.height; y++) {
-        if (snek.body[i].x === x && snek.body[i].y === y) {
-          square = document.getElementById(`${snek.body[i].x}_${snek.body[i].y}`);
-          square.classList.add("snekBody")
-        }
-      }
+  for (let i in snek.body) {
+    if (i == 0) {
+      let square = document.getElementById(`${snek.body[0].x}_${snek.body[0].y}`);
+      square.classList.add("snekHead")
+    }
+    else {
+      square = document.getElementById(`${snek.body[i].x}_${snek.body[i].y}`);
+      square.classList.add("snekBody")   
     }
   }
 }
@@ -124,6 +112,13 @@ function growSnek() {
 }
 
 function moveSnek(direction) {
+  // Remove previous drawn snek
+  for (let i in snek.body) {
+      let square = document.getElementById(`${snek.body[i].x}_${snek.body[i].y}`);
+      square.classList.remove("snekBody")
+      square.classList.remove("snekHead")
+  }
+
   switch (direction) {
     case "ArrowUp":
       snek.body.unshift({ x: snek.body[0].x, y: snek.body[0].y - 1 })
