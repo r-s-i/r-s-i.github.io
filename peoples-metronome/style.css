@@ -1,0 +1,125 @@
+/*General*/
+*,
+*::before,
+*::after {
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+main, footer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+h3,
+h2,
+h1 {
+  text-align: center;
+  width: 100%;
+}
+button {
+  width: 2.5rem;
+  height: 2rem;
+  background: rgb(70, 70, 70);
+}
+
+header,
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+footer > a {
+  padding: 1rem;
+}
+
+#controls,
+#numOfBeats,
+#manual {
+  text-align: center;
+}
+
+/*Controls section*/
+#controls > button {
+  width: 4.5rem;
+  height: 1.75rem;
+}
+
+/*Number of Beats sections*/
+#numOfBeats {
+  margin: 1rem 0 1rem 0;
+}
+#visualBeatsContainers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.visualBeats {
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+  background: lightgray;
+  transition: background 0.1s ease;
+  display: inline-block;
+}
+.visualBeats.active {
+  background: limegreen;
+  box-shadow: 0 0 0.5rem limegreen;
+}
+
+/*Manual Tempo section*/
+#manual {
+  margin-bottom: 1rem;
+}
+#manualBtn {
+  height: 3rem;
+  width: 6rem;
+}
+
+/*Durations section*/
+#duration {
+  display: flex;
+  border: 1px solid dimgray;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+}
+
+.durationContainer {
+  width: 33.3%;
+}
+.durationContainer input[type="range"] {
+  padding: .5rem 0;
+}
+.durationContainer * {
+  width: 100%;
+}
+
+/*Tempo section*/
+#tempo {
+  margin-bottom: 1rem;
+}
+#tempo div {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+}
+#tempoRange {
+   width: 100%;
+}
+
+#cycleVisualizer {
+  display: flex;
+  height: 50px;  
+  border: 2px solid #333;
+  overflow: hidden;
+}
+.segment {
+  height: 100%;
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="https://robiniversen.com/favicon.png"
+    />
+    <meta
+      name="description"
+      content="People's Metronome is a customizable metronome app for creating beat patterns with adjustable tempo and durations."
+    />
+    <title>People's Metronome</title>
+    <link 
+      rel="stylesheet" 
+      type="text/css"  
+      href="https://robiniversen.com/shared.css" 
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>People's Metronome</h1>
+    </header>
+    <main>
+      <section id="controls">
+        <button id="playBtn">Play</button>
+      </section>
+
+      <section id="numOfBeats">
+        <h2>Number of Beats</h2>
+        <button id="removeBeatBtn">-</button>
+        <span id="numOfBeatsDisplay">3</span>
+        <button id="addBeatBtn">+</button>
+        <section id="visualBeatsContainers">
+          <div class="visualBeats"></div>
+          <div class="visualBeats"></div>
+          <div class="visualBeats"></div>
+        </section>
+      </section>
+
+      <section id="cycleVisualizer">
+        <h2>Cycle Visualizer</h2>
+        <span id="cycleBar"></span>
+      </section>
+
+      <section id="manual">
+        <h2>Manual Tempo</h2>
+        <button id="manualBtn">Record</button>
+      </section>
+
+      <section id="duration">
+        <h2>Durations</h2>
+        <section class="durationContainer">
+          <input 
+            type="range" 
+            min="1" 
+            max="1000" 
+            value="333" 
+            id="durationRange1" 
+          />
+          <label for="durationRange1" class="labelForRanges">33.3 %</label>
+          <input 
+            type="number" 
+            min="1" 
+            value="333" 
+            max="1000" 
+            class="numInput" 
+            id="durationNum1"
+          />
+          <label for="durationNum1" class="labelForNums">33.3 %</label>
+        </section>
+      </section>
+      
+      <section id="tempo">
+        <h2>Tempo: <label for="tempoRange" id="tempoLabel">100</label> bpm</h2>
+        <div>
+          <button id="decreaseBeatBtn">-</button>
+          <input type="range" min="1" max="600" value="100" id="tempoRange" />
+          <button id="increaseBeatBtn">+</button>
+        </div>
+      </section>
+
+      <hr />
+
+    </main>
+    <footer>
+      <a href="../development-projects.html">Exit</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
