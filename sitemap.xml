@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://robiniversen.com/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/development-projects.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/contact.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/peoples-metronome/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/add-them-numbers/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/repeat-them-numbers/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/table-snek/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/ape-memory/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/memory-table/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/js-says-too/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/falling-math/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/find-the-matching-panes/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/memorize-the-alphabet-2-0/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/word-for-word/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/tip-calculator/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/hangman-game/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/pomodoro-timer/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/tic-tac-toe/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/js-says/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/master-the-multiplication-table/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/a-random-number-between-x-and-y/</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.66</priority>
+  </url>
+
+  <!-- Lower priority pages -->
+  <url>
+    <loc>https://robiniversen.com/table-snek/slow.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/table-snek/normal.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/table-snek/fast.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/memory-table/easy.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/memory-table/medium.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/memory-table/hard.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/memory-table/unfair.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/js-says-too/2x2.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/js-says-too/3x3.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/js-says-too/4x4.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/js-says-too/5x5.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/find-the-matching-panes/game12.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/find-the-matching-panes/game24.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/find-the-matching-panes/game48.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/master-the-multiplication-table/easy.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/master-the-multiplication-table/medium.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+  <url>
+    <loc>https://robiniversen.com/master-the-multiplication-table/hard.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <priority>0.33</priority>
+  </url>
+
+</urlset>
