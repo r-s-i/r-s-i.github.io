@@ -8,12 +8,12 @@ table {
   margin: 0 auto;
   width: min(100vw, 100vh);
   height: min(100vw, 100vh);
+  border-spacing: 0;         
 }
 
 .invisible {
   display: none;
 }
-
 
 button {
   margin: auto;
@@ -75,8 +75,6 @@ a {
 }
 .triangles.ArrowLeft {
   clip-path: polygon(50% 50%, 0% 0%, 0% 100%);
-
-
 }
 .triangles.ArrowDown {
   clip-path: polygon(100% 100%, 50% 50%, 0% 100%);
