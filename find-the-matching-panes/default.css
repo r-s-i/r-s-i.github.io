@@ -8,6 +8,9 @@ main,
 nav {
   padding: 0 1vh;
 }
+h1 {
+  text-align: center;
+}
 
 #grid-container {
   display: grid;
