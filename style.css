@@ -15,12 +15,11 @@ section {
   padding: 10px;
 }
 
-h1 {
+h1, h2, h3 {
   text-align: center;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: sans-serif;
 }
 
@@ -32,10 +31,41 @@ ul {
 a {
   display: block;
   padding: 0.5rem;
+  text-align: center;
 }
 
 footer {
   text-align: center;
+}
+img {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  display: block;
+}
+
+#latestProject {
+  border: 1px solid dimGray;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #111;
+}
+
+#ctaBtn {
+  display: block;
+  background: #fa5c5c;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+#ctaBtn:visited {
+  background: #fa5c5c;
+  color: white;
+}
+#ctaBtn:hover {
+  opacity: 0.9;
 }
 
 /*Resets*/
